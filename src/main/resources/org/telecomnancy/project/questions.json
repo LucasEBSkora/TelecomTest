@@ -1,0 +1,19 @@
+[
+  {
+    "name": "TNI",
+    "description": "Digital Image Processing",
+    "imagePath": "",
+    "questions": [
+      {
+        "text":"aaaa",
+        "imagePath": "",
+        "options": [
+          {"text":  "yee"},
+          {"text":  "yoo"},
+          {"text":  "yaa"},
+          {"text":  "yuu"}
+        ]
+      }
+    ]
+  }
+]
