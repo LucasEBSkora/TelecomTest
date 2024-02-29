@@ -1,7 +1,7 @@
 package org.telecomnancy.project.model;
 
-import jakarta.json.bind.Jsonb;
-import jakarta.json.bind.JsonbBuilder;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,6 +11,8 @@ class SerializeModelTest {
 
     Subject subject;
     String subjectJSON;
+
+    Gson gson;
 
     @BeforeEach
     void init() {
@@ -38,27 +40,22 @@ class SerializeModelTest {
         subject.questions[0].options[3].text = "bibi";
         subject.questions[1].options[3].imagePath = "bobo";
 
-        subjectJSON = "{\"description\":\"dec\",\"imagePath\":\"img!\",\"name\":\"subj\",\"questions\":[{\"options\":[{\"imagePath\":\"path/to/0\"},{\"imagePath\":\"path/to/1\"},{\"imagePath\":\"path/to/2\"},{\"imagePath\":\"path/to/3\",\"text\":\"bibi\"}],\"text\":\"text\"},{\"imagePath\":\"path\",\"options\":[{\"text\":\"option 0\"},{\"text\":\"option 1\"},{\"text\":\"option 2\"},{\"imagePath\":\"bobo\",\"text\":\"option 3\"}],\"text\":\"text\"}]}";
+        subjectJSON = "{\"name\":\"subj\",\"description\":\"dec\",\"imagePath\":\"img!\",\"questions\":[{\"options\":[{\"imagePath\":\"path/to/0\"},{\"imagePath\":\"path/to/1\"},{\"imagePath\":\"path/to/2\"},{\"text\":\"bibi\",\"imagePath\":\"path/to/3\"}],\"text\":\"text\"},{\"options\":[{\"text\":\"option 0\"},{\"text\":\"option 1\"},{\"text\":\"option 2\"},{\"text\":\"option 3\",\"imagePath\":\"bobo\"}],\"imagePath\":\"path\",\"text\":\"text\"}]}";
+
+        final GsonBuilder builder = new GsonBuilder();
+        gson = builder.create();
     }
 
     @Test
     void serializeTest() {
-
-        String serializedSubject;
-        try (Jsonb jsonb = JsonbBuilder.create()) {
-            serializedSubject = jsonb.toJson(subject);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
+        String serializedSubject = gson.toJson(subject);
         assertEquals(subjectJSON, serializedSubject);
     }
 
     @Test
     void deserializeTest() {
-        Jsonb jsonb = JsonbBuilder.create();
 
-        Subject parsedSubject = jsonb.fromJson(subjectJSON, Subject.class);
+        Subject parsedSubject = gson.fromJson(subjectJSON, Subject.class);
 
         assertEquals(subject.questions.length, parsedSubject.questions.length);
         for (int i = 0; i < subject.questions.length; ++i) {
