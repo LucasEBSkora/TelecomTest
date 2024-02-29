@@ -12,9 +12,13 @@ import org.telecomnancy.project.model.Subject;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.Reader;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Main extends Application {
 
@@ -40,11 +44,13 @@ public class Main extends Application {
     private void loadSubjects() throws IOException {
         final GsonBuilder builder = new GsonBuilder();
         final Gson gson = builder.create();
-        URL resource = Main.class.getResource("questions.json");
-        String path = Objects.requireNonNull(Main.class.getResource("questions.json")).getPath();
-        Reader reader = new FileReader(path);
+        String text = resourceAsString("questions.json");
+        subjects = gson.fromJson(text, Subject[].class);
+    }
 
-        subjects = gson.fromJson(reader, Subject[].class);
+    private String resourceAsString(String path) {
+        InputStream stream =  Main.class.getResourceAsStream(path);
+        return new Scanner(Objects.requireNonNull(stream), StandardCharsets.UTF_8).useDelimiter("\\A").next();
     }
 
     private void show(Parent p) {
