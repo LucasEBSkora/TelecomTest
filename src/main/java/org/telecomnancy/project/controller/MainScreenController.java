@@ -22,8 +22,7 @@ public class MainScreenController {
 
     @FXML
     void initialize() {
-        /*
-        conversationList.setCellFactory(new MessageCellFactory(user.UID, interlocutor.UID));*/
+        subjectsView.setCellFactory(new SubjectCellFactory());
         subjectsView.setItems(FXCollections.observableList(Arrays.stream(subjects).toList()));
 
     }
