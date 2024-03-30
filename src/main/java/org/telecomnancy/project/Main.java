@@ -8,15 +8,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.telecomnancy.project.controller.MainScreenController;
+import org.telecomnancy.project.controller.SubjectScreenController;
 import org.telecomnancy.project.model.Subject;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.Reader;
-import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -65,4 +62,9 @@ public class Main extends Application {
         show(fxmlLoader.load());
     }
 
+    public void SubjectScreen(Subject entry) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("subject-screen.fxml"));
+        fxmlLoader.setControllerFactory(ic -> new SubjectScreenController(this, entry));
+        show(fxmlLoader.load());
+    }
 }
