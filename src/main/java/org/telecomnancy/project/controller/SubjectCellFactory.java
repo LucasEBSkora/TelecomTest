@@ -5,12 +5,11 @@ import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.util.Callback;
-import org.telecomnancy.project.Main;
 import org.telecomnancy.project.model.Subject;
 
-import java.net.URL;
-
 public class SubjectCellFactory implements Callback<ListView<Subject>, ListCell<Subject>> {
+
+    private static double thumbnailHeight = 100;
     @Override
     public ListCell<Subject> call(ListView<Subject> subjectListView) {
         return new ListCell<>() {
@@ -27,16 +26,11 @@ public class SubjectCellFactory implements Callback<ListView<Subject>, ListCell<
             }
 
             private void loadImage(String path) {
-                if (path == null || path.isBlank())
-                    return;
-
-                // calls from Main.class because otherwise we would have to add it to a useless subfolder
-                URL fullPath = Main.class.getResource(path);
-                if (fullPath == null)
-                    return;
-
-                Image imageLoaded = new Image(fullPath.toExternalForm());
+                Image imageLoaded = ImageLoader.load(path);
+                if (imageLoaded == null) return;
                 ImageView iView = new ImageView(imageLoaded);
+                iView.setPreserveRatio(true);
+                iView.setFitHeight(thumbnailHeight);
                 setGraphic(iView);
             }
 

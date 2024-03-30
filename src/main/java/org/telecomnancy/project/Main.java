@@ -38,7 +38,7 @@ public class Main extends Application {
         mainScreen();
     }
 
-    private void loadSubjects() throws IOException {
+    private void loadSubjects() {
         final GsonBuilder builder = new GsonBuilder();
         final Gson gson = builder.create();
         String text = resourceAsString("questions.json");

@@ -21,7 +21,9 @@ class SerializeModelTest {
         subject.questions[0] = new Question();
         subject.questions[1] = new Question();
         subject.questions[0].text = "text";
+        subject.questions[0].level = Difficulty.Beginner;
         subject.questions[1].text = "text";
+        subject.questions[1].level = Difficulty.Advanced;
         subject.questions[1].imagePath = "path";
 
         subject.name = "subj";
@@ -40,7 +42,7 @@ class SerializeModelTest {
         subject.questions[0].options[3].text = "bibi";
         subject.questions[1].options[3].imagePath = "bobo";
 
-        subjectJSON = "{\"name\":\"subj\",\"description\":\"dec\",\"imagePath\":\"img!\",\"questions\":[{\"options\":[{\"imagePath\":\"path/to/0\"},{\"imagePath\":\"path/to/1\"},{\"imagePath\":\"path/to/2\"},{\"text\":\"bibi\",\"imagePath\":\"path/to/3\"}],\"text\":\"text\"},{\"options\":[{\"text\":\"option 0\"},{\"text\":\"option 1\"},{\"text\":\"option 2\"},{\"text\":\"option 3\",\"imagePath\":\"bobo\"}],\"imagePath\":\"path\",\"text\":\"text\"}]}";
+        subjectJSON = "{\"name\":\"subj\",\"description\":\"dec\",\"imagePath\":\"img!\",\"questions\":[{\"options\":[{\"imagePath\":\"path/to/0\"},{\"imagePath\":\"path/to/1\"},{\"imagePath\":\"path/to/2\"},{\"text\":\"bibi\",\"imagePath\":\"path/to/3\"}],\"text\":\"text\",\"level\":\"Beginner\"},{\"options\":[{\"text\":\"option 0\"},{\"text\":\"option 1\"},{\"text\":\"option 2\"},{\"text\":\"option 3\",\"imagePath\":\"bobo\"}],\"imagePath\":\"path\",\"text\":\"text\",\"level\":\"Advanced\"}]}";
 
         final GsonBuilder builder = new GsonBuilder();
         gson = builder.create();
