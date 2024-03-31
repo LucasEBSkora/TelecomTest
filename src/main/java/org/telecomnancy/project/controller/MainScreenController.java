@@ -27,7 +27,6 @@ public class MainScreenController {
     void initialize() {
         subjectsView.setCellFactory(new SubjectCellFactory());
         subjectsView.setItems(FXCollections.observableList(Arrays.stream(subjects).toList()));
-
     }
 
     @FXML

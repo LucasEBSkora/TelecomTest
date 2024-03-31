@@ -16,10 +16,13 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main extends Application {
 
     private Stage primaryStage;
+
+    private Stack<Scene> scenes;
 
     private final int width = 800;
     private final int height = 600;
@@ -33,6 +36,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         this.primaryStage = stage;
+        this.scenes = new Stack<>();
         loadSubjects();
         stage.setTitle("Telecom Test");
         mainScreen();
@@ -50,21 +54,35 @@ public class Main extends Application {
         return new Scanner(Objects.requireNonNull(stream), StandardCharsets.UTF_8).useDelimiter("\\A").next();
     }
 
-    private void show(Parent p) {
+    private void push(Parent p) {
         Scene scene = new Scene(p, width, height);
+        scenes.push(scene);
+        show(scene);
+    }
+
+    private void show(Scene scene) {
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+
+    public void returnToLastScreen() throws IOException {
+        scenes.pop();
+        if (scenes.empty()) {
+            mainScreen();
+            return;
+        }
+        show(scenes.peek());
     }
 
     public void mainScreen() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main-screen.fxml"));
         fxmlLoader.setControllerFactory(ic -> new MainScreenController(this, subjects));
-        show(fxmlLoader.load());
+        push(fxmlLoader.load());
     }
 
     public void SubjectScreen(Subject entry) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("subject-screen.fxml"));
         fxmlLoader.setControllerFactory(ic -> new SubjectScreenController(this, entry));
-        show(fxmlLoader.load());
+        push(fxmlLoader.load());
     }
 }

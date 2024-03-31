@@ -9,7 +9,7 @@ import org.telecomnancy.project.model.Subject;
 
 public class SubjectCellFactory implements Callback<ListView<Subject>, ListCell<Subject>> {
 
-    private static double thumbnailHeight = 100;
+    private static final double thumbnailHeight = 100;
     @Override
     public ListCell<Subject> call(ListView<Subject> subjectListView) {
         return new ListCell<>() {

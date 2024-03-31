@@ -8,7 +8,7 @@
     <children>
         <HBox prefHeight="100.0" prefWidth="200.0">
             <children>
-                <Button mnemonicParsing="false" onAction="#onReturnButtonClick" text="return"/>
+                <Button mnemonicParsing="false" onAction="#onReturnButtonClick" text="quit test"/>
             </children>
         </HBox>
         <Label fx:id="questionField" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308"
