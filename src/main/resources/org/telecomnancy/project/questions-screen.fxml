@@ -2,18 +2,28 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
 <VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0"
-      xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="org.telecomnancy.project.controller.QuestionScreenController">
+      xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="org.telecomnancy.project.controller.QuestionsScreenController">
     <children>
-        <HBox prefHeight="100.0" prefWidth="200.0">
+        <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
             <children>
                 <Button mnemonicParsing="false" onAction="#onReturnButtonClick" text="quit test"/>
+                <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+                <VBox maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0">
+                    <children>
+                        <Label fx:id="currentQuestionLabel" text="Current Question: 0/?"/>
+                        <Label fx:id="answeredQuestionsLabel" text="Answered Questions: 0/?"/>
+                        <Label fx:id="rightAnswersLabel" layoutX="10.0" layoutY="28.0" text="Right answers: 0%"/>
+                    </children>
+                </VBox>
             </children>
         </HBox>
+        <ImageView fx:id="questionImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"/>
         <Label fx:id="questionField" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308"
                maxWidth="1.7976931348623157E308" text="Label" VBox.vgrow="ALWAYS"/>
-        <GridPane alignment="CENTER">
+        <GridPane alignment="CENTER" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
@@ -33,15 +43,26 @@
                 <Insets left="10.0"/>
             </VBox.margin>
         </GridPane>
-        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
+        <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0"
+              VBox.vgrow="NEVER">
             <children>
-                <Button mnemonicParsing="false" onAction="#toLeft" text="&lt;-"/>
+                <Button fx:id="leftButton" mnemonicParsing="false" onAction="#toLeft" text="&lt;-"/>
                 <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
-                <Button mnemonicParsing="false" onAction="#toRight" text="-&gt;"/>
+                <Button fx:id="checkAnswerButton" mnemonicParsing="false" onAction="#onCheckAnswerClick"
+                        text="check answer"/>
+                <Region layoutX="40.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="rightButton" mnemonicParsing="false" onAction="#toRight" text="-&gt;"/>
             </children>
             <padding>
                 <Insets bottom="10.0" top="10.0"/>
             </padding>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0"
+              VBox.vgrow="NEVER">
+            <children>
+                <Button fx:id="finishTestButton" alignment="CENTER_RIGHT" disable="true" mnemonicParsing="false"
+                        onAction="#onFinishTestClick" opacity="0.0" text="Button"/>
+            </children>
         </HBox>
     </children>
     <padding>

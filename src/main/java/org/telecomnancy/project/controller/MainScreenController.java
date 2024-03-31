@@ -33,8 +33,9 @@ public class MainScreenController {
     void selectSubject(MouseEvent event) throws IOException {
         if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
             Subject entry = subjectsView.getSelectionModel().getSelectedItem();
-            main.SubjectScreen(entry);
+            main.subjectScreen(entry);
         }
 
     }
+
 }

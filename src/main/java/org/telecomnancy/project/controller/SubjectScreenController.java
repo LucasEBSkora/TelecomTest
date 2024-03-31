@@ -72,18 +72,18 @@ public class SubjectScreenController {
     }
 
     @FXML
-    void onClickBeginnerButton() {
-
+    void onClickBeginnerButton() throws IOException {
+        main.questionsScreen(questionsByLevel.get(Difficulty.Beginner));
     }
 
     @FXML
-    void onClickIntermediateButton() {
-
+    void onClickIntermediateButton() throws IOException {
+        main.questionsScreen(questionsByLevel.get(Difficulty.Intermediate));
     }
 
     @FXML
-    void onClickAdvancedButton() {
-
+    void onClickAdvancedButton() throws IOException {
+        main.questionsScreen(questionsByLevel.get(Difficulty.Advanced));
     }
 
 

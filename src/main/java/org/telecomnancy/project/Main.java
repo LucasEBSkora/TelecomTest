@@ -8,12 +8,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.telecomnancy.project.controller.MainScreenController;
+import org.telecomnancy.project.controller.QuestionsScreenController;
 import org.telecomnancy.project.controller.SubjectScreenController;
+import org.telecomnancy.project.model.Question;
 import org.telecomnancy.project.model.Subject;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
 import java.util.Stack;
@@ -80,9 +83,15 @@ public class Main extends Application {
         push(fxmlLoader.load());
     }
 
-    public void SubjectScreen(Subject entry) throws IOException {
+    public void subjectScreen(Subject entry) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("subject-screen.fxml"));
         fxmlLoader.setControllerFactory(ic -> new SubjectScreenController(this, entry));
+        push(fxmlLoader.load());
+    }
+
+    public void questionsScreen(List<Question> questions) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("questions-screen.fxml"));
+        fxmlLoader.setControllerFactory(ic -> new QuestionsScreenController(this, questions));
         push(fxmlLoader.load());
     }
 }

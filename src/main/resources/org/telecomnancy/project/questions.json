@@ -6,13 +6,19 @@
     "questions": [
       {
         "text":"aaaa",
-        "imagePath": "",
+        "imagePath": "subjectPictures/TNI.png",
         "level": "Advanced",
         "options": [
-          {"text":  "yee"},
+          {
+            "text": "yee",
+            "imagePath": "subjectPictures/TNI.png"
+          },
           {"text":  "yoo"},
           {"text":  "yaa"},
-          {"text":  "yuu"}
+          {
+            "text": "yuu",
+            "imagePath": "subjectPictures/TNI.png"
+          }
         ]
       }
     ]
