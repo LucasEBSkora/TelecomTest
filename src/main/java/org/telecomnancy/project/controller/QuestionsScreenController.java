@@ -3,6 +3,8 @@ package org.telecomnancy.project.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.util.Pair;
@@ -10,6 +12,7 @@ import org.telecomnancy.project.Main;
 import org.telecomnancy.project.model.Question;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -35,19 +38,33 @@ public class QuestionsScreenController {
     private Button finishTestButton;
     @FXML
     private Button checkAnswerButton;
+    @FXML
+    private RadioButton option1, option2, option3, option4;
+
+    private ToggleGroup optionsGroup;
+
     private int currentQuestion;
 
     public QuestionsScreenController(Main main, List<Question> questions) {
         this.main = main;
         this.questions = questions;
-        answeredQuestions = Collections.nCopies(questions.size(), new Pair<>(false, false));
+        answeredQuestions = new ArrayList<>(Collections.nCopies(questions.size(), new Pair<>(false, false)));
         currentQuestion = 0;
     }
 
     @FXML
     void initialize() {
+        setUpRadioGroup();
         showQuestion();
         updateAnsweredQuestions();
+    }
+
+    private void setUpRadioGroup() {
+        optionsGroup = new ToggleGroup();
+        option1.setToggleGroup(optionsGroup);
+        option2.setToggleGroup(optionsGroup);
+        option3.setToggleGroup(optionsGroup);
+        option4.setToggleGroup(optionsGroup);
     }
 
     private void updateAnsweredQuestions() {
@@ -59,6 +76,7 @@ public class QuestionsScreenController {
     }
 
     private void showQuestion() {
+        checkAnswerButton.setDisable(true);
         updateChangeQuestionButtons();
         updateQuestionTextAndImage();
         updateOptions();
@@ -83,7 +101,17 @@ public class QuestionsScreenController {
     }
 
     private void updateOptions() {
-
+        RadioButton[] buttons = {option1, option2, option3, option4};
+        Question current = questions.get(currentQuestion);
+        for (int i = 0; i < buttons.length; ++i) {
+            buttons[i].setText(current.options[i].text);
+            buttons[i].setUserData(current.options[i].correct);
+            Image img = ImageLoader.load(current.options[i].imagePath);
+            ImageView view = new ImageView(img);
+            view.setPreserveRatio(true);
+            view.setFitHeight(50);
+            buttons[i].setGraphic(view);
+        }
     }
 
     private void updateCurrentQuestionLabel() {
@@ -97,18 +125,35 @@ public class QuestionsScreenController {
     @FXML
     protected void toLeft() {
         --currentQuestion;
+        optionsGroup.selectToggle(null);
         showQuestion();
     }
 
     @FXML
     protected void toRight() {
         ++currentQuestion;
+        optionsGroup.selectToggle(null);
         showQuestion();
     }
 
     @FXML
-    void onCheckAnswerClick() {
+    protected void onOptionSelected() {
+        if (!answeredQuestions.get(currentQuestion).getKey())
+            checkAnswerButton.setDisable(false);
+    }
 
+    @FXML
+    void onCheckAnswerClick() {
+        RadioButton selected = (RadioButton) optionsGroup.getSelectedToggle();
+        if (selected == null) {
+            checkAnswerButton.setDisable(true);
+            return;
+        }
+        System.out.println(selected.getText());
+        boolean wasCorrect = (boolean) selected.getUserData();
+        answeredQuestions.set(currentQuestion, new Pair<>(true, wasCorrect));
+        checkAnswerButton.setDisable(true);
+        updateAnsweredQuestions();
     }
 
     @FXML

@@ -33,11 +33,13 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
             </rowConstraints>
             <children>
-                <RadioButton fx:id="option1" mnemonicParsing="false" text="RadioButton"/>
-                <RadioButton fx:id="option2" mnemonicParsing="false" text="RadioButton" GridPane.columnIndex="1"/>
-                <RadioButton fx:id="option3" mnemonicParsing="false" text="RadioButton" GridPane.rowIndex="1"/>
-                <RadioButton fx:id="option4" mnemonicParsing="false" text="RadioButton" GridPane.columnIndex="1"
+                <RadioButton fx:id="option1" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton"/>
+                <RadioButton fx:id="option2" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton"
+                             GridPane.columnIndex="1"/>
+                <RadioButton fx:id="option3" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton"
                              GridPane.rowIndex="1"/>
+                <RadioButton fx:id="option4" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton"
+                             GridPane.columnIndex="1" GridPane.rowIndex="1"/>
             </children>
             <VBox.margin>
                 <Insets left="10.0"/>
