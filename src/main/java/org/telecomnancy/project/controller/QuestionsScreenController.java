@@ -73,6 +73,13 @@ public class QuestionsScreenController {
         long correctAnswers = answeredQuestions.stream().filter(Pair::getKey).filter(Pair::getValue).count();
         int rightAnswersPercentage = (int) ((100f * correctAnswers) / nAnswered);
         rightAnswersLabel.setText(String.format("Right answers: %d%%", rightAnswersPercentage));
+        if (correctAnswers == questions.size())
+            enableFinishButton();
+    }
+
+    private void enableFinishButton() {
+        finishTestButton.setOpacity(1);
+        finishTestButton.setDisable(false);
     }
 
     private void showQuestion() {
@@ -93,7 +100,6 @@ public class QuestionsScreenController {
         questionField.setText(question.text);
         questionImage.setImage(null);
 
-        System.out.println(question.imagePath);
         if (question.imagePath == null || question.imagePath.isBlank()) return;
         Image img = ImageLoader.load(question.imagePath);
         if (img == null) return;
@@ -149,7 +155,6 @@ public class QuestionsScreenController {
             checkAnswerButton.setDisable(true);
             return;
         }
-        System.out.println(selected.getText());
         boolean wasCorrect = (boolean) selected.getUserData();
         answeredQuestions.set(currentQuestion, new Pair<>(true, wasCorrect));
         checkAnswerButton.setDisable(true);
@@ -157,7 +162,7 @@ public class QuestionsScreenController {
     }
 
     @FXML
-    void onFinishTestClick() {
-
+    void onFinishTestClick() throws IOException {
+        main.returnToLastScreen();
     }
 }
