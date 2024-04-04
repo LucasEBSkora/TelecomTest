@@ -5,44 +5,227 @@
     "imagePath": "subjectPictures/TNI.png",
     "questions": [
       {
-        "text": "1111111111111111",
-        "imagePath": "subjectPictures/TNI.png",
-        "level": "Advanced",
+        "text": "Give the image of gris levels, if we use a median filter throught the line 2, whats is going to be the effect?",
+        "imagePath": "subjectPictures/questionTNI_filterMedian.jpg",
+        "level": "Intermediate",
         "options": [
           {
-            "text": "yee",
-            "imagePath": "subjectPictures/TNI.png",
-            "correct": "false"
+            "text": "The white part is going to grow.",
+            "correct": false
           },
-          {"text":  "yoo"},
-          {"text":  "yaa"},
           {
-            "text": "yuu",
-            "correct": true,
-            "imagePath": "subjectPictures/TNI.png"
+            "text":  "The black part is going to grow.",
+            "correct": false
+          },
+          {
+            "text":  "It is going to enhance the edges in the image",
+            "correct": false
+          },
+          {
+            "text":  "The noise is going to be removed.",
+            "correct": true
           }
         ]
       },
       {
-        "text": "22222222222222222222222222",
-        "imagePath": "subjectPictures/TNI.png",
-        "level": "Advanced",
+        "text": "Give the original and final image, what is the processing applied?",
+        "imagePath": "subjectPictures/questionTNI_dilatacao.png",
+        "level": "Intermediate",
         "options": [
           {
-            "text": "yee",
-            "imagePath": "subjectPictures/TNI.png",
-            "correct": "false"
+            "text": "Erosion",
+            "correct": false
           },
           {
-            "text": "yoo"
+            "text":  "Closing",
+            "correct": false
           },
           {
-            "text": "yaa"
+            "text":  "Dilation",
+            "correct": true
           },
           {
-            "text": "yuu",
-            "correct": true,
-            "imagePath": "subjectPictures/TNI.png"
+            "text":  "Opening",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "Give the original and final image, what is the processing applied?",
+        "imagePath": "subjectPictures/questionTNI_erosao.png",
+        "level": "Intermediate",
+        "options": [
+          {
+            "text": "Erosion.",
+            "correct": true
+          },
+          {
+            "text":  "Closing.",
+            "correct": false
+          },
+          {
+            "text":  "Dilation.",
+            "correct": false
+          },
+          {
+            "text":  "Opening.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "Give the object X, we want to aplly some processing to reach the object number 4, what is the proccesing applied to reach each object 1,2,3 and 4, respectively?",
+        "imagePath": "subjectPictures/questionTNI_dil_ero.png",
+        "level": "Intermediate",
+        "options": [
+          {
+            "text": "Erosion,Erosion,Dilation,Erosion.",
+            "correct": false
+          },
+          {
+            "text":  "Dilation,Erosion,Dilation,Erosion.",
+            "correct": false
+          },
+          {
+            "text":  "Erosion,Dilation,Dilation,Erosion.",
+            "correct": true
+          },
+          {
+            "text":  "Erosion,Dilation,Erosion,Dilation.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "Give the image, how many objects can we get by using the method 4 pixel connectivity?",
+        "imagePath": "subjectPictures/questionTNI_topologie.png",
+        "level": "Intermediate",
+        "options": [
+          {
+            "text": "1.",
+            "correct": false
+          },
+          {
+            "text":  "2.",
+            "correct": true
+          },
+          {
+            "text":  "3.",
+            "correct": false
+          },
+          {
+            "text":  "4.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the number of bits required to store a 256x256 image with 32 gray levels?",
+        "level": "Beginner",
+        "options": [
+          {
+            "text": "327680 bits.",
+            "correct": false
+          },
+          {
+            "text":  "377390 bits.",
+            "correct": true
+          },
+          {
+            "text":  "467480 bits.",
+            "correct": false
+          },
+          {
+            "text":  "417692 bits.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "How does histogram equalization improve the contrast of an image?",
+        "level": "Beginner",
+        "options": [
+          {
+            "text": "By compressing the dynamic range of pixel intensities, resulting in a sharper image.",
+            "correct": false
+          },
+          {
+            "text":  " By redistributing pixel intensities across the histogram, making use of the full available intensity range.",
+            "correct": true
+          },
+          {
+            "text":  "By converting the image to grayscale, eliminating color variations and enhancing brightness.",
+            "correct": false
+          },
+          {
+            "text":  "By reducing noise in the image, resulting in clearer edges and smoother transitions.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the purpose of image filtering in digital image processing?",
+        "level": "Beginner",
+        "options": [
+          {
+            "text": "To add noise to the image.",
+            "correct": false
+          },
+          {
+            "text":  "To remove unwanted information from the image.",
+            "correct": true
+          },
+          {
+            "text":  "To decrease the image resolution.",
+            "correct": false
+          },
+          {
+            "text":  "To decrease the brightness of the image.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the purpose of morphological operations in digital image processing?",
+        "level": "Beginner",
+        "options": [
+          {
+            "text": "To extract features like boundaries and skeletons from the image.",
+            "correct": true
+          },
+          {
+            "text":  "To resize the image.",
+            "correct": false
+          },
+          {
+            "text":  "To enhance the edges in the image.",
+            "correct": false
+          },
+          {
+            "text":  "To remove noise from the image.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the purpose of morphological operations in digital image processing?",
+        "level": "Beginner",
+        "options": [
+          {
+            "text": "To extract features like boundaries and skeletons from the image.",
+            "correct": true
+          },
+          {
+            "text":  "To resize the image.",
+            "correct": false
+          },
+          {
+            "text":  "To enhance the edges in the image.",
+            "correct": false
+          },
+          {
+            "text":  "To remove noise from the image.",
+            "correct": false
           }
         ]
       },
@@ -68,76 +251,243 @@
             "imagePath": "subjectPictures/TNI.png"
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "MOCI",
+    "description": "Computer Design Methods and Tools",
+    "imagePath": "subjectPictures/questionMOCI.png",
+    "questions": [
       {
-        "text": "44444",
-        "imagePath": "subjectPictures/TNI.png",
-        "level": "Advanced",
+        "text": "A customer would like to handle OldTemperatureSensor like a normal sensor. Which pattern can help?",
+        "imagePath": "subjectPictures/questionMOCI.png",
+        "level": "Beginner",
         "options": [
           {
-            "text": "yee",
-            "imagePath": "subjectPictures/TNI.png",
-            "correct": "false"
+            "text": "State",
+            "correct": false
           },
           {
-            "text": "yoo"
+            "text":  "Observer",
+            "correct": false
           },
           {
-            "text": "yaa"
+            "text":  "Adapter",
+            "correct": true
           },
           {
-            "text": "yuu",
-            "correct": true,
-            "imagePath": "subjectPictures/TNI.png"
+            "text":  "Proxy",
+            "correct": false
           }
         ]
       },
       {
-        "text": "655555",
-        "imagePath": "subjectPictures/TNI.png",
-        "level": "Advanced",
+        "text": "'vues' should be notified of a change in 'capteur' status. Which pattern can help?",
+        "imagePath": "subjectPictures/questionMOCI.png",
+        "level": "Beginner",
         "options": [
           {
-            "text": "yee",
-            "imagePath": "subjectPictures/TNI.png",
-            "correct": "false"
+            "text": "State",
+            "correct": false
           },
           {
-            "text": "yoo"
+            "text":  "Observer",
+            "correct": true
           },
           {
-            "text": "yaa"
+            "text":  "Facade",
+            "correct": false
           },
           {
-            "text": "yuu",
-            "correct": true,
-            "imagePath": "subjectPictures/TNI.png"
+            "text":  "Proxy",
+            "correct": false
           }
         ]
       },
       {
-        "text": "6",
-        "imagePath": "subjectPictures/TNI.png",
+        "text": "The software developer want to ensure that the class 'Database' has just one instance and global acess point to it. What design pattern can do it?",
+        "level": "Beginner",
+        "options": [
+          {
+            "text": "Factory",
+            "correct": false
+          },
+          {
+            "text":  "Observer",
+            "correct": false
+          },
+          {
+            "text":  "Facade",
+            "correct": false
+          },
+          {
+            "text":  "Singleton",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "text": "What design pattern does the image represent?",
+        "imagePath": "subjectPictures/questionMOCI_single.png",
+        "level": "Beginner",
+        "options": [
+          {
+            "text": "Memento",
+            "correct": false
+          },
+          {
+            "text":  "Singleton",
+            "correct": true
+          },
+          {
+            "text":  "Facade",
+            "correct": false
+          },
+          {
+            "text":  "Iterator",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "What design pattern does the image represent?",
+        "imagePath": "subjectPictures/questionMOCI_adapter.png",
+        "level": "Beginner",
+        "options": [
+          {
+            "text": "Memento",
+            "correct": false
+          },
+          {
+            "text":  "Singleton",
+            "correct": false
+          },
+          {
+            "text":  "Adapter",
+            "correct": true
+          },
+          {
+            "text":  "Iterator",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "What design pattern does the image represent?",
+        "imagePath": "subjectPictures/questionMOCI_observer.png",
+        "level": "Intermediate",
+        "options": [
+          {
+            "text": "Memento",
+            "correct": false
+          },
+          {
+            "text":  "Observer",
+            "correct": true
+          },
+          {
+            "text":  "Facade",
+            "correct": false
+          },
+          {
+            "text":  "Iterator",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "The software developer wants to separate the algorithm from the object structure so he can add new methods to existing objects without modifying the structure. What pattern is better suited for it?",
+        "level": "Intermediate",
+        "options": [
+          {
+            "text": "Visitor",
+            "correct": true
+          },
+          {
+            "text":  "Observer",
+            "correct": false
+          },
+          {
+            "text":  "Bridge",
+            "correct": false
+          },
+          {
+            "text":  "Iterator",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "Suppose you are developing a system where you need to create different types of documents such as reports, invoices, and contracts. Each document type has its own structure and formatting requirements. Which design pattern is best suited for handling the creation of these documents in a flexible and extensible manner?",
+        "level": "Intermediate",
+        "options": [
+          {
+            "text": "Mediator",
+            "correct": false
+          },
+          {
+            "text":  "Observer",
+            "correct": false
+          },
+          {
+            "text":  "Factory Method",
+            "correct": true
+          },
+          {
+            "text":  "Iterator",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "Consider a scenario where you are developing a graphical user interface (GUI) framework. You want to allow users to customize the appearance and behavior of UI components such as buttons, text fields, and checkboxes. Which design pattern would you use to enable dynamic composition of these components and their behaviors?",
+        "level": "Intermediate",
+        "options": [
+          {
+            "text": "Builder.",
+            "correct": false
+          },
+          {
+            "text":  "Composite",
+            "correct": false
+          },
+          {
+            "text":  "Decorator",
+            "correct": true
+          },
+          {
+            "text":  "Proxy",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "What design pattern does the image represent?",
+        "imagePath": "subjectPictures/questionMOCI_decorator.png",
         "level": "Advanced",
         "options": [
           {
-            "text": "yee",
-            "imagePath": "subjectPictures/TNI.png",
-            "correct": "false"
+            "text": "Memento",
+            "correct": false
           },
           {
-            "text": "yoo"
+            "text":  "Observer",
+            "correct": false
           },
           {
-            "text": "yaa"
+            "text":  "Factory",
+            "correct": false
           },
           {
-            "text": "yuu",
-            "correct": true,
-            "imagePath": "subjectPictures/TNI.png"
+            "text":  "Decorator",
+            "correct": true
           }
         ]
       }
+
     ]
   }
 ]
+
+

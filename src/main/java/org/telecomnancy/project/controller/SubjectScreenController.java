@@ -33,6 +33,8 @@ public class SubjectScreenController {
     Button advancedButton;
     Map<Difficulty, List<Question>> questionsByLevel;
 
+    private final static int nQuestions = 5;
+
     public SubjectScreenController(Main main, Subject subject) {
         this.main = main;
         this.subject = subject;
@@ -81,17 +83,17 @@ public class SubjectScreenController {
 
     @FXML
     void onClickBeginnerButton() throws IOException {
-        main.questionsScreen(pickQuestions(Difficulty.Beginner, 5));
+        main.questionsScreen(pickQuestions(Difficulty.Beginner, nQuestions));
     }
 
     @FXML
     void onClickIntermediateButton() throws IOException {
-        main.questionsScreen(pickQuestions(Difficulty.Intermediate, 5));
+        main.questionsScreen(pickQuestions(Difficulty.Intermediate, nQuestions));
     }
 
     @FXML
     void onClickAdvancedButton() throws IOException {
-        main.questionsScreen(pickQuestions(Difficulty.Advanced, 5));
+        main.questionsScreen(pickQuestions(Difficulty.Advanced, nQuestions));
     }
 
 

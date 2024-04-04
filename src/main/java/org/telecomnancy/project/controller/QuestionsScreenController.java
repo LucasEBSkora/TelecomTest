@@ -7,6 +7,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
 import javafx.util.Pair;
 import org.telecomnancy.project.Main;
 import org.telecomnancy.project.model.Option;
@@ -109,24 +110,32 @@ public class QuestionsScreenController {
         Question question = questions.get(currentQuestion);
         questionField.setText(question.text);
         questionImage.setImage(null);
+        questionImage.setFitHeight(0);
 
         if (question.imagePath == null || question.imagePath.isBlank()) return;
         Image img = ImageLoader.load(question.imagePath);
         if (img == null) return;
+        questionImage.setFitHeight(300);
         questionImage.setImage(img);
     }
 
     private void updateOptions() {
         RadioButton[] buttons = {option1, option2, option3, option4};
         Question current = questions.get(currentQuestion);
+
+        boolean questionAnswered = answeredQuestions.get(currentQuestion).getKey();
         for (int i = 0; i < buttons.length; ++i) {
             buttons[i].setText(current.options[i].text);
             buttons[i].setUserData(current.options[i].correct);
             Image img = ImageLoader.load(current.options[i].imagePath);
             ImageView view = new ImageView(img);
             view.setPreserveRatio(true);
-            view.setFitHeight(50);
+            view.setFitHeight(100);
             buttons[i].setGraphic(view);
+            if (questionAnswered) {
+                Color fillColor = ((boolean) buttons[i].getUserData()) ? Color.LIGHTGREEN : Color.DEEPPINK;
+                buttons[i].setTextFill(fillColor);
+            }
         }
     }
 
@@ -169,6 +178,7 @@ public class QuestionsScreenController {
         answeredQuestions.set(currentQuestion, new Pair<>(true, wasCorrect));
         checkAnswerButton.setDisable(true);
         updateAnsweredQuestions();
+        updateOptions();
     }
 
     @FXML
