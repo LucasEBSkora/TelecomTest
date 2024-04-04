@@ -68,6 +68,75 @@
             "imagePath": "subjectPictures/TNI.png"
           }
         ]
+      },
+      {
+        "text": "44444",
+        "imagePath": "subjectPictures/TNI.png",
+        "level": "Advanced",
+        "options": [
+          {
+            "text": "yee",
+            "imagePath": "subjectPictures/TNI.png",
+            "correct": "false"
+          },
+          {
+            "text": "yoo"
+          },
+          {
+            "text": "yaa"
+          },
+          {
+            "text": "yuu",
+            "correct": true,
+            "imagePath": "subjectPictures/TNI.png"
+          }
+        ]
+      },
+      {
+        "text": "655555",
+        "imagePath": "subjectPictures/TNI.png",
+        "level": "Advanced",
+        "options": [
+          {
+            "text": "yee",
+            "imagePath": "subjectPictures/TNI.png",
+            "correct": "false"
+          },
+          {
+            "text": "yoo"
+          },
+          {
+            "text": "yaa"
+          },
+          {
+            "text": "yuu",
+            "correct": true,
+            "imagePath": "subjectPictures/TNI.png"
+          }
+        ]
+      },
+      {
+        "text": "6",
+        "imagePath": "subjectPictures/TNI.png",
+        "level": "Advanced",
+        "options": [
+          {
+            "text": "yee",
+            "imagePath": "subjectPictures/TNI.png",
+            "correct": "false"
+          },
+          {
+            "text": "yoo"
+          },
+          {
+            "text": "yaa"
+          },
+          {
+            "text": "yuu",
+            "correct": true,
+            "imagePath": "subjectPictures/TNI.png"
+          }
+        ]
       }
     ]
   }

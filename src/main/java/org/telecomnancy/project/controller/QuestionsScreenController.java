@@ -9,6 +9,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.util.Pair;
 import org.telecomnancy.project.Main;
+import org.telecomnancy.project.model.Option;
 import org.telecomnancy.project.model.Question;
 
 import java.io.IOException;
@@ -48,8 +49,17 @@ public class QuestionsScreenController {
     public QuestionsScreenController(Main main, List<Question> questions) {
         this.main = main;
         this.questions = questions;
+        randomizeAlternatives();
         answeredQuestions = new ArrayList<>(Collections.nCopies(questions.size(), new Pair<>(false, false)));
         currentQuestion = 0;
+    }
+
+    private void randomizeAlternatives() {
+        for (Question q : this.questions) {
+            List<Option> options = new ArrayList<>(List.of(q.options));
+            Collections.shuffle(options);
+            options.toArray(q.options);
+        }
     }
 
     @FXML

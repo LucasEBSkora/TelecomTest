@@ -10,10 +10,7 @@ import org.telecomnancy.project.model.Question;
 import org.telecomnancy.project.model.Subject;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class SubjectScreenController {
 
@@ -71,19 +68,30 @@ public class SubjectScreenController {
         main.returnToLastScreen();
     }
 
+    private List<Question> pickQuestions(Difficulty level, int n) {
+        List<Question> randomQuestions = new ArrayList<>(questionsByLevel.get(level));
+
+        Collections.shuffle(randomQuestions);
+
+        while (randomQuestions.size() > n)
+            randomQuestions.remove(0);
+
+        return randomQuestions;
+    }
+
     @FXML
     void onClickBeginnerButton() throws IOException {
-        main.questionsScreen(questionsByLevel.get(Difficulty.Beginner));
+        main.questionsScreen(pickQuestions(Difficulty.Beginner, 5));
     }
 
     @FXML
     void onClickIntermediateButton() throws IOException {
-        main.questionsScreen(questionsByLevel.get(Difficulty.Intermediate));
+        main.questionsScreen(pickQuestions(Difficulty.Intermediate, 5));
     }
 
     @FXML
     void onClickAdvancedButton() throws IOException {
-        main.questionsScreen(questionsByLevel.get(Difficulty.Advanced));
+        main.questionsScreen(pickQuestions(Difficulty.Advanced, 5));
     }
 
 
