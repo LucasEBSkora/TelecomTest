@@ -27,8 +27,8 @@ public class Main extends Application {
 
     private Stack<Scene> scenes;
 
-    private final int width = 800;
-    private final int height = 600;
+    private final int width = 1000;
+    private final int height = 800;
 
     private Subject[] subjects;
 

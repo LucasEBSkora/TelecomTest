@@ -135,7 +135,8 @@ public class QuestionsScreenController {
             if (questionAnswered) {
                 Color fillColor = ((boolean) buttons[i].getUserData()) ? Color.LIGHTGREEN : Color.DEEPPINK;
                 buttons[i].setTextFill(fillColor);
-            }
+            } else
+                buttons[i].setTextFill(Color.BLACK);
         }
     }
 

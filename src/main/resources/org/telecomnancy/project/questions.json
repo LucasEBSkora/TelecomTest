@@ -240,10 +240,12 @@
             "correct": "false"
           },
           {
-            "text": "yoo"
+            "text": "yoo",
+            "imagePath": "subjectPictures/TNI.png"
           },
           {
-            "text": "yaa"
+            "text": "yaa",
+            "imagePath": "subjectPictures/TNI.png"
           },
           {
             "text": "yuu",

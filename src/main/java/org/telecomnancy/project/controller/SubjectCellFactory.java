@@ -21,7 +21,7 @@ public class SubjectCellFactory implements Callback<ListView<Subject>, ListCell<
                     setText(null);
                 } else {
                     loadImage(entry.imagePath);
-                    setText(entry.name);
+                    setText(entry.name + " - " + entry.description);
                 }
             }
 
