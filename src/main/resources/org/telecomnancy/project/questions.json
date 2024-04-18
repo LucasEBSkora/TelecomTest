@@ -851,6 +851,171 @@
         ]
       }
     ]
+  },
+  {
+    "name": "RTS",
+    "description": "Real Time System",
+    "imagePath": "subjectPictures/questionSTR_interblocage.png",
+    "questions": [
+      {
+        "text": "What can we do to avoid race condition?",
+        "level": "Beginner",
+        "options": [
+          {"text": "Using multithreading to increase concurrency", "correct": false},
+          {"text":  "Increasing the system clock speed for faster execution", "correct": false},
+          {"text":  "Implementing mutex locks on critical sections", "correct": true},
+          {"text":  "Enforcing strict ordering of thread execution", "correct": false}
+        ]
+      },
+      {
+        "text": "In the context of Real Time System, what is the meaning of Starvation?",
+        "level": "Beginner",
+        "options": [
+          {"text": "The process of halting execution of low-priority threads to prioritize high-priority ones", "correct": false},
+          {"text":  "A situation where a thread is unable to acquire a required resource indefinitely", "correct": true},
+          {"text":  "A condition where a thread consumes excessive CPU resources, leading to system slowdown", "correct": false},
+          {"text":  "The occurrence of race conditions due to improper synchronization of concurrent threads", "correct": false}
+        ]
+      },
+      {
+        "text": "Is a real-time system characterized primarily by its speed of execution?",
+        "level": "Beginner",
+        "options": [
+          {"text": "Yes, a real time system must execute tasks quickly to meet timing requirements", "correct": false},
+          {"text": "Yes, a real time system always runs faster than non-real-time systems", "correct": false},
+          {"text": "No, a real time system is defined by its ability to perform tasks predictably within specified timing constraints", "correct": false},
+          {"text": "No, a real time system can vary in execution speed depending on its requirements", "correct": true}
+        ]
+      },
+      {
+        "text": "What does \"Deadlock\" refers to?",
+        "level": "Beginner",
+        "options": [
+          {"text": "Multiple threads accessing a shared resource at the same time", "correct": false},
+          {"text": "A situation that a thread consumes all the CPU, slowing down the system", "correct": false},
+          {"text": "When a task with bigger priority is blocked by another task with lower priority", "correct": false},
+          {"text": "Two or more threads are indefinitely blocked, waiting for each other to release resources", "correct": true}
+        ]
+      },
+      {
+        "text": "What is the main difference between a real time system and a non real time system?",
+        "level": "Beginner",
+        "options": [
+          {"text": "Real time systems always execute tasks faster than non real time system", "correct": false},
+          {"text": "The complexity of the task", "correct": false},
+          {"text": "One must meet timing constraints and deadlines while the other this is not necessary", "correct": true},
+          {"text": "Real time systems rely exclusively on cloud-based computing resources", "correct": false}
+        ]
+      },
+      {
+        "text": "Which of the following isn't a concept in genetic algorithms?",
+        "level": "Intermediate",
+        "options": [
+          {"text": "Genotype", "correct": false},
+          {"text": "Fertilization", "correct": true},
+          {"text": "Phenotype", "correct": false},
+          {"text": "Crossover", "correct": false}
+        ]
+      },
+      {
+        "text": "What is the main characteristic of a markov process?",
+        "level": "Intermediate",
+        "options": [
+          {"text": "Transitions alternate between minimizing and maximizing the gain function", "correct": false},
+          {"text": "The number of states is infinite", "correct": false},
+          {"text": "The probability of transitioning to each state only depends on the current state", "correct": true},
+          {"text": "The probabilities of each transition depend on every previous state of the system", "correct": false}
+        ]
+      },
+      {
+        "text": "What is the data representation structure depicted in the picture called?",
+        "imagePath": "subjectPictures/questionAIPrecisionRecall.png",
+        "level": "Intermediate",
+        "options": [
+          {"text": "Precision Table", "correct": false},
+          {"text": "Confusion Matrix", "correct": true},
+          {"text": "Error Chart", "correct": false},
+          {"text": "Prediction Matrix", "correct": false}
+        ]
+      },
+      {
+        "text": "What are the two main metrics calculated using the matrix in the picture?",
+        "imagePath": "subjectPictures/questionAIPrecisionRecall.png",
+        "level": "Intermediate",
+        "options": [
+          {"text": "Completeness and Correctness", "correct": false},
+          {"text": "Accuracy and Correction", "correct": false},
+          {"text": "Precision and Recall", "correct": true},
+          {"text": "Precision and Memory", "correct": false}
+        ]
+      },
+      {
+        "text": "Which of the following models/algorithms CANNOT be used to classify flowers by species according to the length and width of the petals?",
+        "imagePath": "subjectPictures/questionAIClassificationAlgorithms.png",
+        "level": "Intermediate",
+        "options": [
+          {"text": "Decision Tree", "correct": false},
+          {"text": "Neural Network", "correct": false},
+          {"text": "K-means clustering", "correct": false},
+          {"text": "Markov Process", "correct": true}
+        ]
+      },
+      {
+        "text": "Which of the options shows algorithms used with markov processes?",
+        "imagePath": "subjectPictures/questionSTR_acharErro.png",
+        "level": "Advanced",
+        "options": [
+          {"text": "Value iteration and Policy Iteration", "correct": true},
+          {"text": "Error Propagation and Gradient descent", "correct": false},
+          {"text": "Error Propagation and Value Iteration", "correct": false},
+          {"text": "Policy Iteration and Gradient descent", "correct": false}
+        ]
+      },
+      {
+        "text": "Choose the alternative which correctly matches the term to the definition:\n 1- Regression 2- Classification 3- Clustering\n A- Predicting a quantitative variable\nB- Grouping samples by similarity \nC- Predicting a qualitative variable",
+        "imagePath": "subjectPictures/questionSTR_interblocage.png",
+        "level": "Advanced",
+        "options": [
+          {"text": "1-A,2-B,3-C", "correct": false},
+          {"text": "1-C,2-A,3-B", "correct": false},
+          {"text": "1-A,2-C,3-B", "correct": true},
+          {"text": "None of the above", "correct": false}
+        ]
+      },
+      {
+        "text": "What is the name of the phenomenon where training a model too aggressively may make the model only work on its training data?",
+        "level": "Advanced",
+        "imagePath": "subjectPictures/questionSTR_inversaoPrioridade.png",
+        "options": [
+          {"text": "Overtraining", "correct": false},
+          {"text": "Overteaching", "correct": false},
+          {"text": "Overfitting", "correct": true},
+          {"text": "Overlearning", "correct": false}
+        ]
+      },
+      {
+        "text": "What is the name of the algorithm which uses many decision trees to try to get a better result?",
+        "level": "Advanced",
+        "imagePath": "subjectPictures/questionSTR_starvation.png",
+        "options": [
+          {"text": "Decision Forest", "correct": false},
+          {"text": "Random Forest", "correct": true},
+          {"text": "Random Trees", "correct": false},
+          {"text": "Multilayer Tree", "correct": false}
+        ]
+      },
+      {
+        "text": "Which of the following is an example of an AI algorithm?",
+        "level": "Advanced",
+        "imagePath": "subjectPictures/.png",
+        "options": [
+          {"text": "Simplex", "correct": false},
+          {"text": "Morphological closure", "correct": false},
+          {"text": "Monte Carlo Tree search", "correct": false},
+          {"text": "Quicksort", "correct": true}
+        ]
+      }
+    ]
   }
 ]
 
