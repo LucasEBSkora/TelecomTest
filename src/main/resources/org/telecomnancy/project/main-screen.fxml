@@ -18,7 +18,7 @@
             </ImageView>
             <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
                <children>
-                  <Label alignment="CENTER" text="Telecom Test - Choose a subject">
+                  <Label alignment="CENTER" text="Telecom Test - Choose a subject" styleClass="label-style">
                      <font>
                         <Font size="18.0" />
                      </font>

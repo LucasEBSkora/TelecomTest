@@ -620,7 +620,7 @@
       },
           {
             "text": "What pattern can we use to avoid these if-else",
-            "imagePath": "subjectPictures/questionMOCI_facade.png",
+            "imagePath": "subjectPictures/questionMOCI_state.png",
             "level": "Advanced",
             "options": [
               {
