@@ -528,6 +528,28 @@
         ]
       },
       {
+        "text": "Which type of design patterns concern class and object composition?",
+        "level": "Intermediate",
+        "options": [
+          {
+            "text": "Creational Design Patterns",
+            "correct": false
+          },
+          {
+            "text":  "Structural Design Patterns",
+            "correct": true
+          },
+          {
+            "text":  "Behavioral Design Patterns",
+            "correct": false
+          },
+          {
+            "text":  "J2EE Design Patterns",
+            "correct": false
+          }
+        ]
+      },
+      {
         "text": "Consider a scenario where you are developing a graphical user interface (GUI) framework. You want to allow users to customize the appearance and behavior of UI components such as buttons, text fields, and checkboxes. Which design pattern would you use to enable dynamic composition of these components and their behaviors?",
         "level": "Intermediate",
         "options": [
@@ -573,8 +595,7 @@
         ]
       },
       {
-        "text": "Given the code above, what is the pattern implemented?",
-        "imagePath": "subjectPictures/questionMOCI_factory.png",
+        "text": "Which of the following pattern is used when we need to decouple an abstraction from its implementation so that the two can vary independently?",
         "level": "Advanced",
         "options": [
           {
@@ -590,7 +611,7 @@
             "correct": true
           },
           {
-            "text":  "Decorator",
+            "text":  "Bridge",
             "correct": false
           }
         ]
@@ -618,27 +639,48 @@
           }
         ]
       },
+      {
+        "text": "A class Button has inside a lot of if-else, each one changes the behaviour of the class, what pattern can we use to avoid these if-else",
+        "level": "Advanced",
+        "options": [
           {
-            "text": "What pattern can we use to avoid these if-else",
-            "imagePath": "subjectPictures/questionMOCI_state.png",
-            "level": "Advanced",
-            "options": [
+            "text": "Factory",
+            "correct": false
+          },
+          {
+            "text": "Decorator",
+            "correct": false
+          },
+          {
+            "text": "Facade",
+            "correct": false
+          },
+          {
+            "text": "State",
+            "correct": true
+          }
+        ]
+      },
               {
-                "text": "Factory",
-                "correct": false
-              },
-              {
-                "text":  "Decorator",
-                "correct": false
-              },
-              {
-                "text":  "Facade",
-                "correct": false
-              },
-              {
-                "text":  "State",
-                "correct": true
-              }
+                "text": "Imagine you are creating a furniture shop simulator, the code consists of classes that represent a family of related products like Chair, Table, Armchair and this family has several variants in the style like Modern, ArtDeco and Victorian. We want that all classes of the family have the same style , what is the best Pattern to use in this case?",
+                "level": "Advanced",
+                "options": [
+                  {
+                    "text": "Factory Method",
+                    "correct": false
+                  },
+                  {
+                    "text":  "Abstract Factory Pattern",
+                    "correct": true
+                  },
+                  {
+                    "text":  "Strategy Pattern",
+                    "correct": false
+                  },
+                  {
+                    "text":  "Observer Pattern",
+                    "correct": false
+                  }
           ]
        }
     ]
