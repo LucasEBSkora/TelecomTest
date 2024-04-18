@@ -115,7 +115,7 @@ public class QuestionsScreenController {
         if (question.imagePath == null || question.imagePath.isBlank()) return;
         Image img = ImageLoader.load(question.imagePath);
         if (img == null) return;
-        questionImage.setFitHeight(300);
+        questionImage.setFitWidth(400);
         questionImage.setImage(img);
     }
 
@@ -130,7 +130,7 @@ public class QuestionsScreenController {
             Image img = ImageLoader.load(current.options[i].imagePath);
             ImageView view = new ImageView(img);
             view.setPreserveRatio(true);
-            view.setFitHeight(100);
+            view.setFitWidth(100);
             buttons[i].setGraphic(view);
             if (questionAnswered) {
                 Color fillColor = ((boolean) buttons[i].getUserData()) ? Color.LIGHTGREEN : Color.DEEPPINK;
