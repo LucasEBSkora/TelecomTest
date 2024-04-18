@@ -7,7 +7,7 @@
 <?import javafx.scene.text.*?>
 
 
-<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.telecomnancy.project.controller.MainScreenController">
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.telecomnancy.project.controller.MainScreenController" stylesheets="@style.css" styleClass="background">
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
          <children>
@@ -27,7 +27,7 @@
             </HBox>
          </children>
       </HBox>
-      <ListView fx:id="subjectsView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#selectSubject" prefHeight="400.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+      <ListView fx:id="subjectsView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#selectSubject" prefHeight="400.0" prefWidth="400.0" VBox.vgrow="ALWAYS" styleClass="list-view">
           <opaqueInsets>
               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
           </opaqueInsets>

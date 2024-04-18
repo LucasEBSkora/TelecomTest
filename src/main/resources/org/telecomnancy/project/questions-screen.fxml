@@ -5,7 +5,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.telecomnancy.project.controller.QuestionsScreenController">
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.telecomnancy.project.controller.QuestionsScreenController" stylesheets="@style.css" styleClass="background">
     <children>
       <HBox alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
          <children>
@@ -16,7 +16,7 @@
                               <Image url="@logo.png" />
                           </image>
                       </ImageView>
-                      <Button maxWidth="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#onReturnButtonClick" prefWidth="75.0" text="quit test" />
+                      <Button maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onReturnButtonClick" prefWidth="100.0" text="quit test" />
                </children>
             </VBox>
                 <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
@@ -37,7 +37,7 @@
             <Insets top="2.0" />
          </VBox.margin>
       </HBox>
-        <Label fx:id="questionField" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" prefHeight="300.0" prefWidth="500.0" text="Label" wrapText="true" VBox.vgrow="ALWAYS" />
+        <Label fx:id="questionField" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" prefHeight="300.0" prefWidth="500.0" text="Label" wrapText="true" VBox.vgrow="ALWAYS" styleClass="label-style"/>
         <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="250.0" VBox.vgrow="ALWAYS">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -48,10 +48,10 @@
                 <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="100.0" vgrow="ALWAYS" />
             </rowConstraints>
             <children>
-                <RadioButton fx:id="option1" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.vgrow="ALWAYS" />
-                <RadioButton fx:id="option2" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.columnIndex="1" GridPane.vgrow="ALWAYS" />
-                <RadioButton fx:id="option3" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
-                <RadioButton fx:id="option4" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+                <RadioButton fx:id="option1" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.vgrow="ALWAYS" styleClass="radio-button"/>
+                <RadioButton fx:id="option2" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.columnIndex="1" GridPane.vgrow="ALWAYS" styleClass="radio-button"/>
+                <RadioButton fx:id="option3" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" styleClass="radio-button"/>
+                <RadioButton fx:id="option4" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" styleClass="radio-button"/>
             </children>
             <VBox.margin>
                 <Insets left="10.0" />
