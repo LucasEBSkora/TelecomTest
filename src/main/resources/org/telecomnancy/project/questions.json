@@ -10,11 +10,11 @@
         "level": "Intermediate",
         "options": [
           {
-            "text": "The white part is going to grow.",
+            "text": "The white part is going to grow",
             "correct": false
           },
           {
-            "text":  "The black part is going to grow.",
+            "text":  "The black part is going to grow",
             "correct": false
           },
           {
@@ -22,7 +22,7 @@
             "correct": false
           },
           {
-            "text":  "The noise is going to be removed.",
+            "text":  "The noise is going to be removed",
             "correct": true
           }
         ]
@@ -56,19 +56,19 @@
         "level": "Intermediate",
         "options": [
           {
-            "text": "Erosion.",
+            "text": "Erosion",
             "correct": true
           },
           {
-            "text":  "Closing.",
+            "text":  "Closing",
             "correct": false
           },
           {
-            "text":  "Dilation.",
+            "text":  "Dilation",
             "correct": false
           },
           {
-            "text":  "Opening.",
+            "text":  "Opening",
             "correct": false
           }
         ]
@@ -79,19 +79,19 @@
         "level": "Intermediate",
         "options": [
           {
-            "text": "Erosion,Erosion,Dilation,Erosion.",
+            "text": "Erosion,Erosion,Dilation,Erosion",
             "correct": false
           },
           {
-            "text":  "Dilation,Erosion,Dilation,Erosion.",
+            "text":  "Dilation,Erosion,Dilation,Erosion",
             "correct": false
           },
           {
-            "text":  "Erosion,Dilation,Dilation,Erosion.",
+            "text":  "Erosion,Dilation,Dilation,Erosion",
             "correct": true
           },
           {
-            "text":  "Erosion,Dilation,Erosion,Dilation.",
+            "text":  "Erosion,Dilation,Erosion,Dilation",
             "correct": false
           }
         ]
@@ -102,19 +102,19 @@
         "level": "Intermediate",
         "options": [
           {
-            "text": "1.",
+            "text": "1",
             "correct": false
           },
           {
-            "text":  "2.",
+            "text":  "2",
             "correct": true
           },
           {
-            "text":  "3.",
+            "text":  "3",
             "correct": false
           },
           {
-            "text":  "4.",
+            "text":  "4",
             "correct": false
           }
         ]
@@ -124,19 +124,19 @@
         "level": "Beginner",
         "options": [
           {
-            "text": "327680 bits.",
+            "text": "327680 bits",
             "correct": false
           },
           {
-            "text":  "377390 bits.",
+            "text":  "377390 bits",
             "correct": true
           },
           {
-            "text":  "467480 bits.",
+            "text":  "467480 bits",
             "correct": false
           },
           {
-            "text":  "417692 bits.",
+            "text":  "417692 bits",
             "correct": false
           }
         ]
@@ -146,19 +146,19 @@
         "level": "Beginner",
         "options": [
           {
-            "text": "By compressing the dynamic range of pixel intensities, resulting in a sharper image.",
+            "text": "By compressing the dynamic range of pixel intensities, resulting in a sharper image",
             "correct": false
           },
           {
-            "text":  " By redistributing pixel intensities across the histogram, making use of the full available intensity range.",
+            "text":  " By redistributing pixel intensities across the histogram, making use of the full available intensity range",
             "correct": true
           },
           {
-            "text":  "By converting the image to grayscale, eliminating color variations and enhancing brightness.",
+            "text":  "By converting the image to grayscale, eliminating color variations and enhancing brightness",
             "correct": false
           },
           {
-            "text":  "By reducing noise in the image, resulting in clearer edges and smoother transitions.",
+            "text":  "By reducing noise in the image, resulting in clearer edges and smoother transitions",
             "correct": false
           }
         ]
@@ -168,19 +168,19 @@
         "level": "Beginner",
         "options": [
           {
-            "text": "To add noise to the image.",
+            "text": "To add noise to the image",
             "correct": false
           },
           {
-            "text":  "To remove unwanted information from the image.",
+            "text":  "To remove unwanted information from the image",
             "correct": true
           },
           {
-            "text":  "To decrease the image resolution.",
+            "text":  "To decrease the image resolution",
             "correct": false
           },
           {
-            "text":  "To decrease the brightness of the image.",
+            "text":  "To decrease the brightness of the image",
             "correct": false
           }
         ]
@@ -190,19 +190,19 @@
         "level": "Beginner",
         "options": [
           {
-            "text": "To extract features like boundaries and skeletons from the image.",
+            "text": "To extract features like boundaries and skeletons from the image",
             "correct": true
           },
           {
-            "text":  "To resize the image.",
+            "text":  "To resize the image",
             "correct": false
           },
           {
-            "text":  "To enhance the edges in the image.",
+            "text":  "To enhance the edges in the image",
             "correct": false
           },
           {
-            "text":  "To remove noise from the image.",
+            "text":  "To remove noise from the image",
             "correct": false
           }
         ]
@@ -212,19 +212,19 @@
         "level": "Beginner",
         "options": [
           {
-            "text": "To extract features like boundaries and skeletons from the image.",
+            "text": "To extract features like boundaries and skeletons from the image",
             "correct": true
           },
           {
-            "text":  "To resize the image.",
+            "text":  "To resize the image",
             "correct": false
           },
           {
-            "text":  "To enhance the edges in the image.",
+            "text":  "To enhance the edges in the image",
             "correct": false
           },
           {
-            "text":  "To remove noise from the image.",
+            "text":  "To remove noise from the image",
             "correct": false
           }
         ]
@@ -347,8 +347,8 @@
     "imagePath": "subjectPictures/questionMOCI.png",
     "questions": [
       {
-        "text": "A customer would like to handle OldTemperatureSensor like a normal sensor. Which pattern can help?",
-        "imagePath": "subjectPictures/questionMOCI.png",
+        "text": "A customer would like to handle OldTemperatureSensor like a normal Sensor. Which pattern can help?",
+        "imagePath": "subjectPictures/questionMOCI1.png",
         "level": "Beginner",
         "options": [
           {
@@ -370,8 +370,8 @@
         ]
       },
       {
-        "text": "'vues' should be notified of a change in 'capteur' status. Which pattern can help?",
-        "imagePath": "subjectPictures/questionMOCI.png",
+        "text": "'ViewSensor' should be notified of a change in 'Sensor' status. Which pattern can help?",
+        "imagePath": "subjectPictures/questionMOCI2.png",
         "level": "Beginner",
         "options": [
           {
@@ -908,111 +908,108 @@
         ]
       },
       {
-        "text": "Which of the following isn't a concept in genetic algorithms?",
+        "text": "Why can it be said that the EDF scheduling is optimal?",
         "level": "Intermediate",
         "options": [
-          {"text": "Genotype", "correct": false},
-          {"text": "Fertilization", "correct": true},
-          {"text": "Phenotype", "correct": false},
-          {"text": "Crossover", "correct": false}
+          {"text": "It's the fastest among the algorithms", "correct": false},
+          {"text": "It minimizes the number of context switches", "correct": false},
+          {"text": "It guarantees fair allocation of resources among the tasks", "correct": false},
+          {"text": "it minimizes the deadline miss ratio by prioritizing tasks with closer deadlines", "correct": true}
         ]
       },
       {
-        "text": "What is the main characteristic of a markov process?",
+        "text": "What problem does the protocol Priority Ceiling prevent that the protocol Priority Heritage does not ?",
         "level": "Intermediate",
         "options": [
-          {"text": "Transitions alternate between minimizing and maximizing the gain function", "correct": false},
-          {"text": "The number of states is infinite", "correct": false},
-          {"text": "The probability of transitioning to each state only depends on the current state", "correct": true},
-          {"text": "The probabilities of each transition depend on every previous state of the system", "correct": false}
-        ]
-      },
-      {
-        "text": "What is the data representation structure depicted in the picture called?",
-        "imagePath": "subjectPictures/questionAIPrecisionRecall.png",
-        "level": "Intermediate",
-        "options": [
-          {"text": "Precision Table", "correct": false},
-          {"text": "Confusion Matrix", "correct": true},
-          {"text": "Error Chart", "correct": false},
-          {"text": "Prediction Matrix", "correct": false}
-        ]
-      },
-      {
-        "text": "What are the two main metrics calculated using the matrix in the picture?",
-        "imagePath": "subjectPictures/questionAIPrecisionRecall.png",
-        "level": "Intermediate",
-        "options": [
-          {"text": "Completeness and Correctness", "correct": false},
-          {"text": "Accuracy and Correction", "correct": false},
-          {"text": "Precision and Recall", "correct": true},
-          {"text": "Precision and Memory", "correct": false}
-        ]
-      },
-      {
-        "text": "Which of the following models/algorithms CANNOT be used to classify flowers by species according to the length and width of the petals?",
-        "imagePath": "subjectPictures/questionAIClassificationAlgorithms.png",
-        "level": "Intermediate",
-        "options": [
-          {"text": "Decision Tree", "correct": false},
-          {"text": "Neural Network", "correct": false},
-          {"text": "K-means clustering", "correct": false},
-          {"text": "Markov Process", "correct": true}
-        ]
-      },
-      {
-        "text": "Which of the options shows algorithms used with markov processes?",
-        "imagePath": "subjectPictures/questionSTR_acharErro.png",
-        "level": "Advanced",
-        "options": [
-          {"text": "Value iteration and Policy Iteration", "correct": true},
-          {"text": "Error Propagation and Gradient descent", "correct": false},
-          {"text": "Error Propagation and Value Iteration", "correct": false},
-          {"text": "Policy Iteration and Gradient descent", "correct": false}
-        ]
-      },
-      {
-        "text": "Choose the alternative which correctly matches the term to the definition:\n 1- Regression 2- Classification 3- Clustering\n A- Predicting a quantitative variable\nB- Grouping samples by similarity \nC- Predicting a qualitative variable",
-        "imagePath": "subjectPictures/questionSTR_interblocage.png",
-        "level": "Advanced",
-        "options": [
-          {"text": "1-A,2-B,3-C", "correct": false},
-          {"text": "1-C,2-A,3-B", "correct": false},
-          {"text": "1-A,2-C,3-B", "correct": true},
+          {"text": "DeadLock", "correct": true},
+          {"text": "Starvation", "correct": false},
+          {"text": "Race Condition", "correct": false},
           {"text": "None of the above", "correct": false}
         ]
       },
       {
-        "text": "What is the name of the phenomenon where training a model too aggressively may make the model only work on its training data?",
+        "text": "What algorithm(s) is(are) the best to meet the deadline of all the tasks?",
+        "level": "Intermediate",
+        "options": [
+          {"text": "RM", "correct": false},
+          {"text": "EDF", "correct": false},
+          {"text": "LLF", "correct": false},
+          {"text": "EDF/LLF", "correct": true}
+        ]
+      },
+      {
+        "text": "What is the primary purpose of using a mutex?",
+        "imagePath": "subjectPictures/questionAIPrecisionRecall.png",
+        "level": "Intermediate",
+        "options": [
+          {"text": "To maximize CPU utilization by allowing multiple threads to execute simultaneously", "correct": false},
+          {"text": "To prevent race conditions", "correct": true},
+          {"text": "To synchronize the execution of threads", "correct": false},
+          {"text": "To allocate memory dynamically ", "correct": false}
+        ]
+      },
+      {
+        "text": "What potential issue can happen when using priority semaphores?",
+        "level": "Intermediate",
+        "options": [
+          {"text": "Deadlock", "correct": false},
+          {"text": "Priority inversion", "correct": true},
+          {"text": "Race conditions", "correct": false},
+          {"text": "Stack overflow", "correct": false}
+        ]
+      },
+      {
+        "text": "The code above represent the sender of the model multiple Sender one Receiver, between the options, what is the most critical error?",
+        "imagePath": "subjectPictures/questionSTR_acharErro.png",
+        "level": "Advanced",
+        "options": [
+          {"text": "If the value is negative, the Receiver will read nothing", "correct": true},
+          {"text": "There is no variable LastWakeTime", "correct": false},
+          {"text": "The shared memory should be protected by a mutex", "correct": false},
+          {"text": "None of the above", "correct": false}
+        ]
+      },
+      {
+        "text": "What is the problem found in the image?",
+        "imagePath": "subjectPictures/questionSTR_interblocage.png",
+        "level": "Advanced",
+        "options": [
+          {"text": "Race Condition", "correct": false},
+          {"text": "Deadlock", "correct": true},
+          {"text": "Priority Inversion", "correct": false},
+          {"text": "None of the above", "correct": false}
+        ]
+      },
+      {
+        "text": "What is the problem found in the image?",
         "level": "Advanced",
         "imagePath": "subjectPictures/questionSTR_inversaoPrioridade.png",
         "options": [
-          {"text": "Overtraining", "correct": false},
-          {"text": "Overteaching", "correct": false},
-          {"text": "Overfitting", "correct": true},
-          {"text": "Overlearning", "correct": false}
+          {"text": "Priority Inversion", "correct": true},
+          {"text": "Deadline is not respected", "correct": false},
+          {"text": "Starvation", "correct": false},
+          {"text": "Race Condition", "correct": false}
         ]
       },
       {
-        "text": "What is the name of the algorithm which uses many decision trees to try to get a better result?",
+        "text": "The image shows a table with informations: Arrival time, Bust time and priority. What is the problem task P1 face?",
         "level": "Advanced",
         "imagePath": "subjectPictures/questionSTR_starvation.png",
         "options": [
-          {"text": "Decision Forest", "correct": false},
-          {"text": "Random Forest", "correct": true},
-          {"text": "Random Trees", "correct": false},
-          {"text": "Multilayer Tree", "correct": false}
+          {"text": "Race Condition", "correct": false},
+          {"text": "Starvation", "correct": true},
+          {"text": "Deadline is not respected", "correct": false},
+          {"text": "Priority Inversion", "correct": false}
         ]
       },
       {
-        "text": "Which of the following is an example of an AI algorithm?",
+        "text": "Two tasks A and B work under a real time system, at the beggining task A has a higher priority that B, so it starts using the CPY. At some moment later, both task has the same priority (task A was running before this moment). Which task should be the next to use the CPU?",
         "level": "Advanced",
-        "imagePath": "subjectPictures/.png",
         "options": [
-          {"text": "Simplex", "correct": false},
-          {"text": "Morphological closure", "correct": false},
-          {"text": "Monte Carlo Tree search", "correct": false},
-          {"text": "Quicksort", "correct": true}
+          {"text": "It does not matter which one should use the CPU next because both has the same priority", "correct": false},
+          {"text": "Task B to avoid starvation", "correct": false},
+          {"text": "Task A to avoid context switching as possible", "correct": false},
+          {"text": "None of the above", "correct": true}
         ]
       }
     ]
