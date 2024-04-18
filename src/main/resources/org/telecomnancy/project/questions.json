@@ -605,17 +605,19 @@
             "correct": true
           },
           {
-            "text":  "Observer",
+            "text": "Observer",
             "correct": false
           },
           {
-            "text":  "Factory",
+            "text": "Factory",
             "correct": false
           },
           {
-            "text":  "Decorator",
+            "text": "Decorator",
             "correct": false
-          },
+          }
+        ]
+      },
           {
             "text": "What pattern can we use to avoid these if-else",
             "imagePath": "subjectPictures/questionMOCI_facade.png",
@@ -637,9 +639,175 @@
                 "text":  "State",
                 "correct": true
               }
+          ]
+       }
+    ]
+  },
+  {
+    "name": "AI",
+    "description": "Artificial Intelligence",
+    "imagePath": "subjectPictures/AI.png",
+    "questions": [
+      {
+        "text": "\"According to ___ AI, the computer is not merely a tool in the study of the mind; rather, the appropriately programmed computer really is a mind.\"\n Choose one of the adjectives to fill in the blank:",
+        "level": "Intermediate",
+        "options": [
+          {"text": "weak", "correct": false},
+          {"text":  "complete", "correct": false},
+          {"text":  "strong", "correct": true},
+          {"text":  "real", "correct": false}
+        ]
+      },
+      {
+        "text": "which of the following is the correct name of the state-space search algorithm that always makes the choice that minimizes the estimate cost of the path?",
+        "level": "Intermediate",
+        "options": [
+          {"text": "Greedy Search", "correct": true},
+          {"text":  "Hungry Search", "correct": false},
+          {"text":  "Gluttonous Search", "correct": false},
+          {"text":  "Tasty Search", "correct": false}
+        ]
+      },
+      {
+        "text": "In the context of game algorithms, which technique would help diminish the number of studied game states?",
+        "imagePath": "subjectPictures/questionIAalfa-beta.png",
+        "level": "Advanced",
+        "options": [
+          {"text": "bad node pruning", "correct": false},
+          {"text": "Alpha-Beta cutting", "correct": false},
+          {"text": "node shearing", "correct": false},
+          {"text": "Alpha-Beta pruning", "correct": true}
+        ]
+      },
+      {
+        "text": "The problem of coloring regions on a map such that adjacent regions have different colors is an example of a:",
+        "imagePath": "subjectPictures/questionIAConstraintBasedProgramming.jpg",
+        "level": "Beginner",
+        "options": [
+          {"text": "Linear Problem", "correct": false},
+          {"text": "Classification Problem", "correct": false},
+          {"text": "Constraint Satisfaction Problem", "correct": true},
+          {"text": "Shape Recognition Problem", "correct": false}
+        ]
+      },
+      {
+        "text": "The image is an example of which type of AI algorithm?",
+        "imagePath": "subjectPictures/AI.png",
+        "level": "Beginner",
+        "options": [
+          {"text": "Decision tree", "correct": false},
+          {"text": "Neural network", "correct": true},
+          {"text": "Neuronal web", "correct": false},
+          {"text": "Neural Net", "correct": false}
+        ]
+      },
+      {
+        "text": "Which of the following isn't a concept in genetic algorithms?",
+        "level": "Intermediate",
+        "options": [
+          {"text": "Genotype", "correct": false},
+          {"text": "Fertilization", "correct": true},
+          {"text": "Phenotype", "correct": false},
+          {"text": "Crossover", "correct": false}
+        ]
+      },
+      {
+        "text": "What is the main characteristic of a markov process?",
+        "level": "Intermediate",
+        "options": [
+          {"text": "Transitions alternate between minimizing and maximizing the gain function", "correct": false},
+          {"text": "The number of states is infinite", "correct": false},
+          {"text": "The probability of transitioning to each state only depends on the current state", "correct": true},
+          {"text": "The probabilities of each transition depend on every previous state of the system", "correct": false}
+        ]
+      },
+      {
+        "text": "What is the data representation structure depicted in the picture called?",
+        "imagePath": "subjectPictures/questionAIPrecisionRecall.png",
+        "level": "Intermediate",
+        "options": [
+          {"text": "Precision Table", "correct": false},
+          {"text": "Confusion Matrix", "correct": true},
+          {"text": "Error Chart", "correct": false},
+          {"text": "Prediction Matrix", "correct": false}
+        ]
+      },
+      {
+        "text": "What are the two main metrics calculated using the matrix in the picture?",
+        "imagePath": "subjectPictures/questionAIPrecisionRecall.png",
+        "level": "Advanced",
+        "options": [
+          {"text": "Completeness and Correctness", "correct": false},
+          {"text": "Accuracy and Correction", "correct": false},
+          {"text": "Precision and Recall", "correct": true},
+          {"text": "Precision and Memory", "correct": false}
+        ]
+      },
+      {
+        "text": "Which of the following models/algorithms CANNOT be used to classify flowers by species according to the length and width of the petals?",
+        "imagePath": "subjectPictures/questionAIClassificationAlgorithms.png",
+        "level": "Advanced",
+        "options": [
+          {"text": "Decision Tree", "correct": false},
+          {"text": "Neural Network", "correct": false},
+          {"text": "K-means clustering", "correct": false},
+          {"text": "Markov Process", "correct": true}
+        ]
+      },
+      {
+        "text": "Which of the options shows algorithms used with markov processes?",
+        "imagePath": "subjectPictures/questionAIMarkovProcess.png",
+        "level": "Advanced",
+        "options": [
+          {"text": "Value iteration and Policy Iteration", "correct": true},
+          {"text": "Error Propagation and Gradient descent", "correct": false},
+          {"text": "Error Propagation and Value Iteration", "correct": false},
+          {"text": "Policy Iteration and Gradient descent", "correct": false}
+        ]
+      },
+      {
+        "text": "Choose the alternative which correctly matches the term to the definition:\n 1- Regression 2- Classification 3- Clustering\n A- Predicting a quantitative variable\nB- Grouping samples by similarity \nC- Predicting a qualitative variable",
+        "level": "Advanced",
+        "options": [
+          {"text": "1-A,2-B,3-C", "correct": false},
+          {"text": "1-C,2-A,3-B", "correct": false},
+          {"text": "1-A,2-C,3-B", "correct": true},
+          {"text": "None of the above", "correct": false}
+        ]
+      },
+      {
+        "text": "What is the name of the phenomenon where training a model too aggressively may make the model only work on its training data?",
+        "level": "Beginner",
+        "imagePath": "subjectPictures/QuestionAIOverfitting.png",
+        "options": [
+          {"text": "Overtraining", "correct": false},
+          {"text": "Overteaching", "correct": false},
+          {"text": "Overfitting", "correct": true},
+          {"text": "Overlearning", "correct": false}
+        ]
+      },
+      {
+        "text": "What is the name of the algorithm which uses many decision trees to try to get a better result?",
+        "level": "Beginner",
+        "imagePath": "subjectPictures/questionAIRandomForest.png",
+        "options": [
+          {"text": "Decision Forest", "correct": false},
+          {"text": "Random Forest", "correct": true},
+          {"text": "Random Trees", "correct": false},
+          {"text": "Multilayer Tree", "correct": false}
+        ]
+      },
+      {
+        "text": "Which of the following is an example of an AI algorithm?",
+        "level": "Beginner",
+        "imagePath": "subjectPictures/.png",
+        "options": [
+          {"text": "Simplex", "correct": false},
+          {"text": "Morphological closure", "correct": false},
+          {"text": "Monte Carlo Tree search", "correct": false},
+          {"text": "Quicksort", "correct": true}
         ]
       }
-
     ]
   }
 ]
