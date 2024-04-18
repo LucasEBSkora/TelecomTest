@@ -230,27 +230,112 @@
         ]
       },
       {
-        "text": "3333333333333333333333",
-        "imagePath": "subjectPictures/TNI.png",
+        "text": "In the context of digital image processing, what is one of the purposes of tattooing an image?",
         "level": "Advanced",
         "options": [
           {
-            "text": "yee",
-            "imagePath": "subjectPictures/TNI.png",
-            "correct": "false"
+            "text": "To enhance the visual appeal of the image",
+            "correct": false
           },
           {
-            "text": "yoo",
-            "imagePath": "subjectPictures/TNI.png"
+            "text": "To add metadata or digital signatures for copyright protection",
+            "correct": true
           },
           {
-            "text": "yaa",
-            "imagePath": "subjectPictures/TNI.png"
+            "text": "To convert the image into a different file format",
+            "correct": false
           },
           {
-            "text": "yuu",
-            "correct": true,
-            "imagePath": "subjectPictures/TNI.png"
+            "text": "To resize the image for better display on different devices",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the primary objective of the concept 'Tatouage Fragile'?",
+        "level": "Advanced",
+        "options": [
+          {
+            "text": "To apply permanent tattoos onto digital images",
+            "correct": false
+          },
+          {
+            "text": "To embed hidden messages or data into digital images",
+            "correct": false
+          },
+          {
+            "text": "Allow to prove that a document hasn't been counterfeit",
+            "correct": true
+          },
+          {
+            "text": "To apply permanent watermarks onto digital images",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the objective to attack an tattooed image ?",
+        "level": "Advanced",
+        "options": [
+          {
+            "text": "To modify the tattoo to convey a different message",
+            "correct": false
+          },
+          {
+            "text": "To embed hidden messages or data into digital images",
+            "correct": false
+          },
+          {
+            "text": "To remove the tattoo from the image completely",
+            "correct": false
+          },
+          {
+            "text": "Get access to the information by removing the tattoo",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "text": "Bellow the options, what is the method of tattooing an image?",
+        "level": "Advanced",
+        "options": [
+          {
+            "text": "Fourier Transform",
+            "correct": false
+          },
+          {
+            "text": "LSB",
+            "correct": true
+          },
+          {
+            "text": "Region Growing",
+            "correct": false
+          },
+          {
+            "text": "Principal Component Analysis (PCA)",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "If an image is coded in 8bits/pixel and has an Entropie of 6,5bits/pixel, what does this mean?",
+        "level": "Advanced",
+        "options": [
+          {
+            "text": "The image contains less information than can be represented by 8 bits per pixel",
+            "correct": true
+          },
+          {
+            "text": "The image contains more information than can be represented by 8 bits per pixel",
+            "correct": false
+          },
+          {
+            "text": "The image contains exactly 6.5 bits of information per pixel",
+            "correct": false
+          },
+          {
+            "text": "The image contains exactly 8 bits of information per pixel",
+            "correct": false
           }
         ]
       }
