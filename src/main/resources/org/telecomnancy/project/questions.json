@@ -939,7 +939,6 @@
       },
       {
         "text": "What is the primary purpose of using a mutex?",
-        "imagePath": "subjectPictures/questionAIPrecisionRecall.png",
         "level": "Intermediate",
         "options": [
           {"text": "To maximize CPU utilization by allowing multiple threads to execute simultaneously", "correct": false},
@@ -992,7 +991,7 @@
         ]
       },
       {
-        "text": "The image shows a table with informations: Arrival time, Bust time and priority. What is the problem task P1 face?",
+        "text": "The image shows the Arrival time, Bust time and priority of some tasks. What is the problem task P1 face?",
         "level": "Advanced",
         "imagePath": "subjectPictures/questionSTR_starvation.png",
         "options": [
@@ -1003,7 +1002,7 @@
         ]
       },
       {
-        "text": "Two tasks A and B work under a real time system, at the beggining task A has a higher priority that B, so it starts using the CPY. At some moment later, both task has the same priority (task A was running before this moment). Which task should be the next to use the CPU?",
+        "text": "Two tasks A and B work under a real time system, at the beginning task A has a higher priority that B, so it starts using the CPU. At some moment later, both task has the same priority (task A was running before this moment). Which task should be the next to use the CPU?",
         "level": "Advanced",
         "options": [
           {"text": "It does not matter which one should use the CPU next because both has the same priority", "correct": false},
