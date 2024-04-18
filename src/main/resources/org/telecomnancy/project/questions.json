@@ -571,6 +571,73 @@
             "correct": true
           }
         ]
+      },
+      {
+        "text": "Given the code above, what is the pattern implemented?",
+        "imagePath": "subjectPictures/questionMOCI_factory.png",
+        "level": "Advanced",
+        "options": [
+          {
+            "text": "Memento",
+            "correct": false
+          },
+          {
+            "text":  "Observer",
+            "correct": false
+          },
+          {
+            "text":  "Factory",
+            "correct": true
+          },
+          {
+            "text":  "Decorator",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the pattern that better represent the image?",
+        "imagePath": "subjectPictures/questionMOCI_facade.png",
+        "level": "Advanced",
+        "options": [
+          {
+            "text": "Facade",
+            "correct": true
+          },
+          {
+            "text":  "Observer",
+            "correct": false
+          },
+          {
+            "text":  "Factory",
+            "correct": false
+          },
+          {
+            "text":  "Decorator",
+            "correct": false
+          },
+          {
+            "text": "What pattern can we use to avoid these if-else",
+            "imagePath": "subjectPictures/questionMOCI_facade.png",
+            "level": "Advanced",
+            "options": [
+              {
+                "text": "Factory",
+                "correct": false
+              },
+              {
+                "text":  "Decorator",
+                "correct": false
+              },
+              {
+                "text":  "Facade",
+                "correct": false
+              },
+              {
+                "text":  "State",
+                "correct": true
+              }
+        ]
       }
 
     ]
