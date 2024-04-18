@@ -4,8 +4,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.telecomnancy.project.controller.QuestionsScreenController" stylesheets="@style.css" styleClass="background">
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.telecomnancy.project.controller.QuestionsScreenController">
     <children>
       <HBox alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
          <children>
@@ -17,6 +18,12 @@
                           </image>
                       </ImageView>
                       <Button maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onReturnButtonClick" prefWidth="100.0" text="quit test" />
+                  <Region minHeight="10.0" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                            <Button fx:id="leftButton" mnemonicParsing="false" onAction="#toLeft" text="&lt;-" />
+                     </children>
+                  </HBox>
                </children>
             </VBox>
                 <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
@@ -27,6 +34,12 @@
                         <Label fx:id="currentQuestionLabel" text="Current Question: 0/?" />
                         <Label fx:id="answeredQuestionsLabel" text="Answered Questions: 0/?" />
                         <Label fx:id="rightAnswersLabel" layoutX="10.0" layoutY="28.0" minWidth="200.0" text="Right answers: 0%" />
+                  <Region prefHeight="10.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <HBox alignment="CENTER_RIGHT">
+                     <children>
+                            <Button fx:id="rightButton" mnemonicParsing="false" onAction="#toRight" text="-&gt;" />
+                     </children>
+                  </HBox>
                     </children>
                <HBox.margin>
                   <Insets top="7.0" />
@@ -37,8 +50,8 @@
             <Insets top="2.0" />
          </VBox.margin>
       </HBox>
-        <Label fx:id="questionField" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" prefHeight="300.0" prefWidth="500.0" text="Label" wrapText="true" VBox.vgrow="ALWAYS" styleClass="label-style"/>
-        <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="250.0" VBox.vgrow="ALWAYS">
+      <Text fx:id="questionField" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-style" text="Text" textAlignment="CENTER" wrappingWidth="400.0" />
+        <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="200.0" VBox.vgrow="ALWAYS">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -48,10 +61,10 @@
                 <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="100.0" vgrow="ALWAYS" />
             </rowConstraints>
             <children>
-                <RadioButton fx:id="option1" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.vgrow="ALWAYS" styleClass="radio-button"/>
-                <RadioButton fx:id="option2" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.columnIndex="1" GridPane.vgrow="ALWAYS" styleClass="radio-button"/>
-                <RadioButton fx:id="option3" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" styleClass="radio-button"/>
-                <RadioButton fx:id="option4" mnemonicParsing="false" onAction="#onOptionSelected" text="RadioButton" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" styleClass="radio-button"/>
+                <RadioButton fx:id="option1" mnemonicParsing="false" onAction="#onOptionSelected" styleClass="radio-button" text="RadioButton" wrapText="true" GridPane.vgrow="ALWAYS" />
+                <RadioButton fx:id="option2" mnemonicParsing="false" onAction="#onOptionSelected" styleClass="radio-button" text="RadioButton" wrapText="true" GridPane.columnIndex="1" GridPane.vgrow="ALWAYS" />
+                <RadioButton fx:id="option3" mnemonicParsing="false" onAction="#onOptionSelected" styleClass="radio-button" text="RadioButton" wrapText="true" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+                <RadioButton fx:id="option4" mnemonicParsing="false" onAction="#onOptionSelected" styleClass="radio-button" text="RadioButton" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
             </children>
             <VBox.margin>
                 <Insets left="10.0" />
@@ -59,20 +72,17 @@
         </GridPane>
         <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
             <children>
-                <Button fx:id="leftButton" mnemonicParsing="false" onAction="#toLeft" text="&lt;-" />
                 <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
                 <Button fx:id="checkAnswerButton" mnemonicParsing="false" onAction="#onCheckAnswerClick" text="check answer" />
-                <Region layoutX="40.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                <Button fx:id="rightButton" mnemonicParsing="false" onAction="#toRight" text="-&gt;" />
+              <HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                  <children>
+                      <Button fx:id="finishTestButton" alignment="CENTER_RIGHT" disable="true" mnemonicParsing="false" onAction="#onFinishTestClick" opacity="0.0" text="Finish Test" />
+                  </children>
+              </HBox>
             </children>
             <padding>
-                <Insets bottom="10.0" top="10.0" />
+                <Insets bottom="10.0" />
             </padding>
-        </HBox>
-        <HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" VBox.vgrow="NEVER">
-            <children>
-                <Button fx:id="finishTestButton" alignment="CENTER_RIGHT" disable="true" mnemonicParsing="false" onAction="#onFinishTestClick" opacity="0.0" text="Finish Test" />
-            </children>
         </HBox>
     </children>
     <padding>

@@ -8,6 +8,7 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.util.Pair;
 import org.telecomnancy.project.Main;
 import org.telecomnancy.project.model.Option;
@@ -20,7 +21,7 @@ import java.util.List;
 
 public class QuestionsScreenController {
     @FXML
-    private Label questionField;
+    private Text questionField;
     private final Main main;
     private final List<Question> questions;
     private final List<Pair<Boolean, Boolean>> answeredQuestions;
@@ -84,7 +85,7 @@ public class QuestionsScreenController {
         long correctAnswers = answeredQuestions.stream().filter(Pair::getKey).filter(Pair::getValue).count();
         int rightAnswersPercentage = (int) ((100f * correctAnswers) / nAnswered);
         rightAnswersLabel.setText(String.format("Right answers: %d%%", rightAnswersPercentage));
-        if (correctAnswers == questions.size())
+        if (nAnswered == questions.size())
             enableFinishButton();
     }
 
@@ -115,7 +116,7 @@ public class QuestionsScreenController {
         if (question.imagePath == null || question.imagePath.isBlank()) return;
         Image img = ImageLoader.load(question.imagePath);
         if (img == null) return;
-        questionImage.setFitWidth(400);
+        questionImage.setFitHeight(350);
         questionImage.setImage(img);
     }
 
