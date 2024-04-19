@@ -846,8 +846,8 @@
         "options": [
           {"text": "Simplex", "correct": false},
           {"text": "Morphological closure", "correct": false},
-          {"text": "Monte Carlo Tree search", "correct": false},
-          {"text": "Quicksort", "correct": true}
+          {"text": "Monte Carlo Tree search", "correct": true},
+          {"text": "Quicksort", "correct": false}
         ]
       }
     ]
