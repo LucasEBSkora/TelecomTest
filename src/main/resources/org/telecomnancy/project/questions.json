@@ -5,7 +5,7 @@
     "imagePath": "subjectPictures/TNI.png",
     "questions": [
       {
-        "text": "Give the image of gris levels, if we use a median filter throught the line 2, whats is going to be the effect?",
+        "text": "Given the greyscale image above, if we use a median filter on line 2, whats is going to be the effect?",
         "imagePath": "subjectPictures/questionTNI_filterMedian.jpg",
         "level": "Intermediate",
         "options": [
@@ -28,7 +28,7 @@
         ]
       },
       {
-        "text": "Give the original and final image, what is the processing applied?",
+        "text": "Given the original and final images, what was the applied processing method?",
         "imagePath": "subjectPictures/questionTNI_dilatacao.png",
         "level": "Intermediate",
         "options": [
@@ -51,7 +51,7 @@
         ]
       },
       {
-        "text": "Give the original and final image, what is the processing applied?",
+        "text": "Given the original and final images, what was the applied processing method?",
         "imagePath": "subjectPictures/questionTNI_erosao.png",
         "level": "Intermediate",
         "options": [
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "text": "Give the object X, we want to aplly some processing to reach the object number 4, what is the proccesing applied to reach each object 1,2,3 and 4, respectively?",
+        "text": "Given the object X, we want to apply processing algorithms to reach the object number 4. What is the method applied to reach objects 1,2,3 and 4, respectively?",
         "imagePath": "subjectPictures/questionTNI_dil_ero.png",
         "level": "Intermediate",
         "options": [
@@ -97,7 +97,7 @@
         ]
       },
       {
-        "text": "Give the image, how many objects can we get by using the method 4 pixel connectivity?",
+        "text": "In the image above, how many objects can we get by using 4 pixel connectivity?",
         "imagePath": "subjectPictures/questionTNI_topologie.png",
         "level": "Intermediate",
         "options": [
@@ -120,7 +120,7 @@
         ]
       },
       {
-        "text": "What is the number of bits required to store a 256x256 image with 32 gray levels?",
+        "text": "What is the number of bits required to store a 256x256 image with 32 grayscale levels?",
         "level": "Beginner",
         "options": [
           {
@@ -208,29 +208,29 @@
         ]
       },
       {
-        "text": "What is the purpose of morphological operations in digital image processing?",
+        "text": "Pick the option that isn't an example of morphological operation",
         "level": "Beginner",
         "options": [
           {
-            "text": "To extract features like boundaries and skeletons from the image",
+            "text": "Wavelet Transformation",
             "correct": true
           },
           {
-            "text":  "To resize the image",
+            "text":  "Skeletonization",
             "correct": false
           },
           {
-            "text":  "To enhance the edges in the image",
+            "text":  "Closure",
             "correct": false
           },
           {
-            "text":  "To remove noise from the image",
+            "text":  "Erosion",
             "correct": false
           }
         ]
       },
       {
-        "text": "In the context of digital image processing, what is one of the purposes of tattooing an image?",
+        "text": "In the context of digital image processing, what is one of the purposes of watermarking an image?",
         "level": "Advanced",
         "options": [
           {
@@ -252,33 +252,33 @@
         ]
       },
       {
-        "text": "What is the primary objective of the concept 'Tatouage Fragile'?",
+        "text": "What is the primary objective of the concept of Fragile Watermarking?",
         "level": "Advanced",
         "options": [
-          {
-            "text": "To apply permanent tattoos onto digital images",
-            "correct": false
-          },
-          {
-            "text": "To embed hidden messages or data into digital images",
-            "correct": false
-          },
-          {
-            "text": "Allow to prove that a document hasn't been counterfeit",
-            "correct": true
-          },
           {
             "text": "To apply permanent watermarks onto digital images",
             "correct": false
+          },
+          {
+            "text": "To embed hidden messages or data into digital images",
+            "correct": false
+          },
+          {
+            "text": "To prove that a document hasn't been tampered with",
+            "correct": true
+          },
+          {
+            "text": "To add visible watermarks on digital images",
+            "correct": false
           }
         ]
       },
       {
-        "text": "What is the objective to attack an tattooed image ?",
+        "text": "What can be the objective of attacking an watermarked image ?",
         "level": "Advanced",
         "options": [
           {
-            "text": "To modify the tattoo to convey a different message",
+            "text": "To modify the watermark to convey a different message",
             "correct": false
           },
           {
@@ -286,17 +286,17 @@
             "correct": false
           },
           {
-            "text": "To remove the tattoo from the image completely",
+            "text": "To remove the watermark from the image completely",
             "correct": false
           },
           {
-            "text": "Get access to the information by removing the tattoo",
+            "text": "Get access to the information by removing the watermark",
             "correct": true
           }
         ]
       },
       {
-        "text": "Bellow the options, what is the method of tattooing an image?",
+        "text": "In the options below, which is a method of watermarking an image?",
         "level": "Advanced",
         "options": [
           {
@@ -318,7 +318,7 @@
         ]
       },
       {
-        "text": "If an image is coded in 8bits/pixel and has an Entropie of 6,5bits/pixel, what does this mean?",
+        "text": "If an image is coded in 8bits/pixel and has an entropy of 6,5bits/pixel, what does this mean?",
         "level": "Advanced",
         "options": [
           {
@@ -347,7 +347,7 @@
     "imagePath": "subjectPictures/questionMOCI.png",
     "questions": [
       {
-        "text": "A customer would like to handle OldTemperatureSensor like a normal Sensor. Which pattern can help?",
+        "text": "A client would like to handle OldTemperatureSensor like a normal Sensor. Which pattern can help?",
         "imagePath": "subjectPictures/questionMOCI1.png",
         "level": "Beginner",
         "options": [
@@ -393,7 +393,7 @@
         ]
       },
       {
-        "text": "The software developer want to ensure that the class 'Database' has just one instance and global acess point to it. What design pattern can do it?",
+        "text": "The software developer wants to ensure that the 'Database' class has just one globally accessible instance. What design pattern could do it?",
         "level": "Beginner",
         "options": [
           {
@@ -484,7 +484,7 @@
         ]
       },
       {
-        "text": "The software developer wants to separate the algorithm from the object structure so he can add new methods to existing objects without modifying the structure. What pattern is better suited for it?",
+        "text": "The software developer wants to separate the algorithm from the object structure so he can add new methods to existing objects without modifying the class structure. What pattern is better suited for it?",
         "level": "Intermediate",
         "options": [
           {
@@ -528,7 +528,7 @@
         ]
       },
       {
-        "text": "Which type of design patterns concern class and object composition?",
+        "text": "Which type of design pattern is concerned with class and object composition?",
         "level": "Intermediate",
         "options": [
           {
@@ -617,7 +617,7 @@
         ]
       },
       {
-        "text": "What is the pattern that better represent the image?",
+        "text": "What is the pattern that better represents the image?",
         "imagePath": "subjectPictures/questionMOCI_facade.png",
         "level": "Advanced",
         "options": [
@@ -640,7 +640,7 @@
         ]
       },
       {
-        "text": "A class Button has inside a lot of if-else, each one changes the behaviour of the class, what pattern can we use to avoid these if-else",
+        "text": "A Button class has a lot of if-else statements, each one choosing a different behaviour of the class. what pattern can we use to avoid these statements?",
         "level": "Advanced",
         "options": [
           {
@@ -662,7 +662,7 @@
         ]
       },
               {
-                "text": "Imagine you are creating a furniture shop simulator, the code consists of classes that represent a family of related products like Chair, Table, Armchair and this family has several variants in the style like Modern, ArtDeco and Victorian. We want that all classes of the family have the same style , what is the best Pattern to use in this case?",
+                "text": "Imagine you are creating a furniture shop simulator, the code consists of classes that represent a family of related products like Chair, Table, Armchair and this family has several variants in the style like Modern, ArtDeco and Victorian. We want to create all classes of the family with the same style, what is the best Pattern to use in this case?",
                 "level": "Advanced",
                 "options": [
                   {
@@ -854,11 +854,11 @@
   },
   {
     "name": "RTS",
-    "description": "Real Time System",
+    "description": "Real Time Systems",
     "imagePath": "subjectPictures/questionSTR_interblocage.png",
     "questions": [
       {
-        "text": "What can we do to avoid race condition?",
+        "text": "What can we do to avoid race conditions?",
         "level": "Beginner",
         "options": [
           {"text": "Using multithreading to increase concurrency", "correct": false},
@@ -868,7 +868,7 @@
         ]
       },
       {
-        "text": "In the context of Real Time System, what is the meaning of Starvation?",
+        "text": "In the context of Real Time Systems, what is the meaning of Starvation?",
         "level": "Beginner",
         "options": [
           {"text": "The process of halting execution of low-priority threads to prioritize high-priority ones", "correct": false},
@@ -883,8 +883,8 @@
         "options": [
           {"text": "Yes, a real time system must execute tasks quickly to meet timing requirements", "correct": false},
           {"text": "Yes, a real time system always runs faster than non-real-time systems", "correct": false},
-          {"text": "No, a real time system is defined by its ability to perform tasks predictably within specified timing constraints", "correct": false},
-          {"text": "No, a real time system can vary in execution speed depending on its requirements", "correct": true}
+          {"text": "No, a real time system is defined by its ability to perform tasks predictably within specified timing constraints", "correct": true},
+          {"text": "No, a real time system is characterized by its focus on user interaction", "correct": false}
         ]
       },
       {
@@ -892,7 +892,7 @@
         "level": "Beginner",
         "options": [
           {"text": "Multiple threads accessing a shared resource at the same time", "correct": false},
-          {"text": "A situation that a thread consumes all the CPU, slowing down the system", "correct": false},
+          {"text": "A situation in which a thread consumes all the CPU, slowing down the system", "correct": false},
           {"text": "When a task with bigger priority is blocked by another task with lower priority", "correct": false},
           {"text": "Two or more threads are indefinitely blocked, waiting for each other to release resources", "correct": true}
         ]
@@ -902,8 +902,8 @@
         "level": "Beginner",
         "options": [
           {"text": "Real time systems always execute tasks faster than non real time system", "correct": false},
-          {"text": "The complexity of the task", "correct": false},
-          {"text": "One must meet timing constraints and deadlines while the other this is not necessary", "correct": true},
+          {"text": "The complexity of the tasks", "correct": false},
+          {"text": "One must meet timing constraints and deadlines while for the other this is not necessary", "correct": true},
           {"text": "Real time systems rely exclusively on cloud-based computing resources", "correct": false}
         ]
       },
@@ -918,12 +918,12 @@
         ]
       },
       {
-        "text": "What problem does the protocol Priority Ceiling prevent that the protocol Priority Heritage does not ?",
+        "text": "What problem does the Priority Ceiling protocol prevent that the Priority Heritage protocol does not ?",
         "level": "Intermediate",
         "options": [
           {"text": "DeadLock", "correct": true},
           {"text": "Starvation", "correct": false},
-          {"text": "Race Condition", "correct": false},
+          {"text": "Race Conditions", "correct": false},
           {"text": "None of the above", "correct": false}
         ]
       },
@@ -958,7 +958,7 @@
         ]
       },
       {
-        "text": "The code above represent the sender of the model multiple Sender one Receiver, between the options, what is the most critical error?",
+        "text": "The code above represent the sender of the multiple Sender one Receiver model, between the options, what is the most critical error?",
         "imagePath": "subjectPictures/questionSTR_acharErro.png",
         "level": "Advanced",
         "options": [
@@ -991,7 +991,7 @@
         ]
       },
       {
-        "text": "The image shows the Arrival time, Bust time and priority of some tasks. What is the problem task P1 face?",
+        "text": "The image shows the Arrival time, Bust time and priority of some tasks. What is the problem task P1 faces?",
         "level": "Advanced",
         "imagePath": "subjectPictures/questionSTR_starvation.png",
         "options": [
@@ -1007,7 +1007,7 @@
         "options": [
           {"text": "It does not matter which one should use the CPU next because both has the same priority", "correct": false},
           {"text": "Task B to avoid starvation", "correct": false},
-          {"text": "Task A to avoid context switching as possible", "correct": false},
+          {"text": "Task A to avoid context switching as much as possible possible", "correct": false},
           {"text": "None of the above", "correct": true}
         ]
       }
