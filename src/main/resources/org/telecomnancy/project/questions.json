@@ -107,7 +107,7 @@
           },
           {
             "text":  "2",
-            "correct": true
+            "correct": false
           },
           {
             "text":  "3",
@@ -115,7 +115,7 @@
           },
           {
             "text":  "4",
-            "correct": false
+            "correct": true
           }
         ]
       },
@@ -230,7 +230,7 @@
         ]
       },
       {
-        "text": "Pick the option that isn't an example of morphological operation",
+        "text": "Pick the option that isn't an example of morphological operation.",
         "level": "Beginner",
         "options": [
           {
@@ -630,11 +630,11 @@
           },
           {
             "text":  "Factory",
-            "correct": true
+            "correct": false
           },
           {
             "text":  "Bridge",
-            "correct": false
+            "correct": true
           }
         ]
       },
