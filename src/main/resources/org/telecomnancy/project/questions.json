@@ -5,7 +5,7 @@
     "imagePath": "subjectPictures/TNI.png",
     "questions": [
       {
-        "text": "Give the image of gris levels, if we use a median filter throught the line 2, whats is going to be the effect?",
+        "text": "Given the image of gris levels, if we use a median filter through line 2, what is going to be the effect?",
         "imagePath": "subjectPictures/questionTNI_filterMedian.jpg",
         "level": "Intermediate",
         "options": [
@@ -28,7 +28,7 @@
         ]
       },
       {
-        "text": "Give the original and final image, what is the processing applied?",
+        "text": "Given the original and final image, what is the processing applied?",
         "imagePath": "subjectPictures/questionTNI_dilatacao.png",
         "level": "Intermediate",
         "options": [
@@ -51,7 +51,7 @@
         ]
       },
       {
-        "text": "Give the original and final image, what is the processing applied?",
+        "text": "Given the original and final image, what is the processing applied?",
         "imagePath": "subjectPictures/questionTNI_erosao.png",
         "level": "Intermediate",
         "options": [
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "text": "Give the object X, we want to aplly some processing to reach the object number 4, what is the proccesing applied to reach each object 1,2,3 and 4, respectively?",
+        "text": "Given the object X, we want to aplly some processing to reach the object number 4, what is the proccesing applied to reach each object 1,2,3 and 4, respectively?",
         "imagePath": "subjectPictures/questionTNI_dil_ero.png",
         "level": "Intermediate",
         "options": [
@@ -97,7 +97,7 @@
         ]
       },
       {
-        "text": "Give the image, how many objects can we get by using the method 4 pixel connectivity?",
+        "text": "Given the image, how many objects can we get by using the method 4 pixel connectivity?",
         "imagePath": "subjectPictures/questionTNI_topologie.png",
         "level": "Intermediate",
         "options": [
@@ -208,24 +208,24 @@
         ]
       },
       {
-        "text": "What is the purpose of morphological operations in digital image processing?",
+        "text": "What term describes the process of identifying and separating objects or regions of interest within an image based on their characteristics like color, texture, or shape?",
         "level": "Beginner",
         "options": [
           {
-            "text": "To extract features like boundaries and skeletons from the image",
+            "text": "Edge Detection",
+            "correct": false
+          },
+          {
+            "text":  "Histogram Equalization",
+            "correct": false
+          },
+          {
+            "text":  "Morphological Operations",
+            "correct": false
+          },
+          {
+            "text":  "Segmentation",
             "correct": true
-          },
-          {
-            "text":  "To resize the image",
-            "correct": false
-          },
-          {
-            "text":  "To enhance the edges in the image",
-            "correct": false
-          },
-          {
-            "text":  "To remove noise from the image",
-            "correct": false
           }
         ]
       },
@@ -252,7 +252,7 @@
         ]
       },
       {
-        "text": "What is the primary objective of the concept 'Tatouage Fragile'?",
+        "text": "What is the primary objective of the concept 'Fragile Watermarking'?",
         "level": "Advanced",
         "options": [
           {
@@ -318,7 +318,7 @@
         ]
       },
       {
-        "text": "If an image is coded in 8bits/pixel and has an Entropie of 6,5bits/pixel, what does this mean?",
+        "text": "If an image is coded in 8bits/pixel and has an entropy of 6,5bits/pixel, what does this mean?",
         "level": "Advanced",
         "options": [
           {
@@ -347,7 +347,7 @@
     "imagePath": "subjectPictures/questionMOCI.png",
     "questions": [
       {
-        "text": "A customer would like to handle OldTemperatureSensor like a normal Sensor. Which pattern can help?",
+        "text": "A customer would like to handle OldTemperatureSensor like a normal Sensor. What pattern is suited for this situation?",
         "imagePath": "subjectPictures/questionMOCI1.png",
         "level": "Beginner",
         "options": [
@@ -370,7 +370,7 @@
         ]
       },
       {
-        "text": "'ViewSensor' should be notified of a change in 'Sensor' status. Which pattern can help?",
+        "text": "'ViewSensor' should be notified of a change in 'Sensor' status. What pattern is suited for this situation?",
         "imagePath": "subjectPictures/questionMOCI2.png",
         "level": "Beginner",
         "options": [
@@ -393,7 +393,7 @@
         ]
       },
       {
-        "text": "The software developer want to ensure that the class 'Database' has just one instance and global acess point to it. What design pattern can do it?",
+        "text": "The software developer want to ensure that the class 'Database' has just one instance and global access point to it. What design pattern can do it?",
         "level": "Beginner",
         "options": [
           {
@@ -415,7 +415,7 @@
         ]
       },
       {
-        "text": "What design pattern does the image represent?",
+        "text": "What design pattern does the image above represent?",
         "imagePath": "subjectPictures/questionMOCI_single.png",
         "level": "Beginner",
         "options": [
@@ -438,7 +438,7 @@
         ]
       },
       {
-        "text": "What design pattern does the image represent?",
+        "text": "What design pattern does the image above represent?",
         "imagePath": "subjectPictures/questionMOCI_adapter.png",
         "level": "Beginner",
         "options": [
@@ -461,7 +461,7 @@
         ]
       },
       {
-        "text": "What design pattern does the image represent?",
+        "text": "What design pattern does the image above represent?",
         "imagePath": "subjectPictures/questionMOCI_observer.png",
         "level": "Intermediate",
         "options": [
@@ -484,7 +484,7 @@
         ]
       },
       {
-        "text": "The software developer wants to separate the algorithm from the object structure so he can add new methods to existing objects without modifying the structure. What pattern is better suited for it?",
+        "text": "The software developer wants to separate the algorithm from the object structure so he can add new methods to existing objects without modifying the structure. What pattern is better suited for this situation?",
         "level": "Intermediate",
         "options": [
           {
@@ -550,7 +550,7 @@
         ]
       },
       {
-        "text": "Consider a scenario where you are developing a graphical user interface (GUI) framework. You want to allow users to customize the appearance and behavior of UI components such as buttons, text fields, and checkboxes. Which design pattern would you use to enable dynamic composition of these components and their behaviors?",
+        "text": "Suppose you are designing a Graphical user interface framework where you will enable a user to customize the appearances and behaviors of UI components: buttons, text fields, checkboxes, etc. Which design pattern would you use for the dynamic composition of the UI components and their relationships?",
         "level": "Intermediate",
         "options": [
           {
@@ -572,7 +572,7 @@
         ]
       },
       {
-        "text": "What design pattern does the image represent?",
+        "text": "What design pattern does the image above represent?",
         "imagePath": "subjectPictures/questionMOCI_decorator.png",
         "level": "Advanced",
         "options": [
@@ -640,7 +640,7 @@
         ]
       },
       {
-        "text": "A class Button has inside a lot of if-else, each one changes the behaviour of the class, what pattern can we use to avoid these if-else",
+        "text": "A class has inside a lot of if-else, each one changes the behaviour of the class, what pattern can we use to avoid these if-else",
         "level": "Advanced",
         "options": [
           {
@@ -814,7 +814,7 @@
           {"text": "1-A,2-B,3-C", "correct": false},
           {"text": "1-C,2-A,3-B", "correct": false},
           {"text": "1-A,2-C,3-B", "correct": true},
-          {"text": "None of the above", "correct": false}
+          {"text": "None of the options", "correct": false}
         ]
       },
       {
@@ -878,7 +878,7 @@
         ]
       },
       {
-        "text": "Is a real-time system characterized primarily by its speed of execution?",
+        "text": "Is a real-time system characterized primarily by it's speed of execution?",
         "level": "Beginner",
         "options": [
           {"text": "Yes, a real time system must execute tasks quickly to meet timing requirements", "correct": false},
@@ -888,7 +888,7 @@
         ]
       },
       {
-        "text": "What does \"Deadlock\" refers to?",
+        "text": "What does \"Deadlock\" refer to?",
         "level": "Beginner",
         "options": [
           {"text": "Multiple threads accessing a shared resource at the same time", "correct": false},
@@ -924,7 +924,7 @@
           {"text": "DeadLock", "correct": true},
           {"text": "Starvation", "correct": false},
           {"text": "Race Condition", "correct": false},
-          {"text": "None of the above", "correct": false}
+          {"text": "None of the options", "correct": false}
         ]
       },
       {
@@ -965,22 +965,22 @@
           {"text": "If the value is negative, the Receiver will read nothing", "correct": true},
           {"text": "There is no variable LastWakeTime", "correct": false},
           {"text": "The shared memory should be protected by a mutex", "correct": false},
-          {"text": "None of the above", "correct": false}
+          {"text": "None of the options", "correct": false}
         ]
       },
       {
-        "text": "What is the problem found in the image?",
+        "text": "What is the problem found in the image above?",
         "imagePath": "subjectPictures/questionSTR_interblocage.png",
         "level": "Advanced",
         "options": [
           {"text": "Race Condition", "correct": false},
           {"text": "Deadlock", "correct": true},
           {"text": "Priority Inversion", "correct": false},
-          {"text": "None of the above", "correct": false}
+          {"text": "None of the options", "correct": false}
         ]
       },
       {
-        "text": "What is the problem found in the image?",
+        "text": "What is the problem found in the image above?",
         "level": "Advanced",
         "imagePath": "subjectPictures/questionSTR_inversaoPrioridade.png",
         "options": [
@@ -1002,13 +1002,13 @@
         ]
       },
       {
-        "text": "Two tasks A and B work under a real time system, at the beginning task A has a higher priority that B, so it starts using the CPU. At some moment later, both task has the same priority (task A was running before this moment). Which task should be the next to use the CPU?",
+        "text": "Two tasks A and B work under a real time system. At the beginning, task A has a higher priority than B, so it starts using the CPU. At some moment later, both task have the same priority (task A was running before this moment). Which task should be the next to use the CPU?",
         "level": "Advanced",
         "options": [
           {"text": "It does not matter which one should use the CPU next because both has the same priority", "correct": false},
-          {"text": "Task B to avoid starvation", "correct": false},
-          {"text": "Task A to avoid context switching as possible", "correct": false},
-          {"text": "None of the above", "correct": true}
+          {"text": "Task B, to avoid starvation", "correct": false},
+          {"text": "Task A, to minimize context switching as much as possible", "correct": false},
+          {"text": "None of the options", "correct": true}
         ]
       }
     ]
