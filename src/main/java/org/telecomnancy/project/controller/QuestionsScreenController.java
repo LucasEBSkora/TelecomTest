@@ -116,7 +116,7 @@ public class QuestionsScreenController {
         if (question.imagePath == null || question.imagePath.isBlank()) return;
         Image img = ImageLoader.load(question.imagePath);
         if (img == null) return;
-        questionImage.setFitHeight(350);
+        questionImage.setFitHeight(400);
         questionImage.setImage(img);
     }
 

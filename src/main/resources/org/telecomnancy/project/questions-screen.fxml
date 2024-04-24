@@ -27,7 +27,7 @@
                </children>
             </VBox>
                 <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-              <ImageView fx:id="questionImage" fitHeight="250.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true" />
+              <ImageView fx:id="questionImage" fitHeight="400.0" pickOnBounds="true" preserveRatio="true" />
             <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
                 <VBox maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0">
                     <children>

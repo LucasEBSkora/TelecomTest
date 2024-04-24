@@ -366,7 +366,7 @@
   {
     "name": "CDMT",
     "description": "Computer Design Methods and Tools",
-    "imagePath": "subjectPictures/questionMOCI.png",
+    "imagePath": "subjectPictures/questionMOCI1.png",
     "questions": [
       {
         "text": "A client would like to handle OldTemperatureSensor like a normal Sensor. Which pattern can help?",
@@ -842,7 +842,7 @@
       {
         "text": "What is the name of the phenomenon where training a model too aggressively may make the model only work on its training data?",
         "level": "Beginner",
-        "imagePath": "subjectPictures/QuestionAIOverfitting.png",
+        "imagePath": "subjectPictures/QuestionAIOverfitting2.png",
         "options": [
           {"text": "Overtraining", "correct": false},
           {"text": "Overteaching", "correct": false},
